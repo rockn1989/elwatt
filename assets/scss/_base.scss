@@ -1,0 +1,17 @@
+html,
+body {
+  font-size: $fontSize;
+  line-height: $lineHeight;
+  font-family: $mainFont;
+  color: $black;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+main {
+  flex-grow: 1;
+}
