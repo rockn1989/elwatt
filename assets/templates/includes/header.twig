@@ -1,7 +1,9 @@
 {% block content %}
 
-	<header class="header">
-		<h1>Header2121</h1>
+	<header id="sticky-header" class="header">
+		{% include "./partials/header/header-desk.twig" %}
+		{% include "./partials/header/header-mob.twig" %}
+		{% include "./partials/header/header-fixed.twig" %}
 	</header>
 
 {% endblock %}

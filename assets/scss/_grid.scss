@@ -9,3 +9,8 @@
   flex-direction: column;
   min-height: 100vh;
 }
+
+.uk-container {
+  max-width: $containerWidth;
+  box-sizing: border-box;
+}

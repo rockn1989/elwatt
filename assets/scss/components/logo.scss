@@ -1,0 +1,19 @@
+.logo {
+  display: flex;
+  text-decoration: none;
+
+  &__slogan {
+    margin-left: 20px;
+    flex-shrink: 0;
+    font-size: 14px;
+    line-height: 18px;
+    color: $prime;
+    font-family: $secondFont;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &:hover {
+    text-decoration: none;
+  }
+}

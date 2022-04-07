@@ -1,0 +1,74 @@
+<!-- begin header-mob -->
+<div class="header-mob uk-hidden@l">
+	<div class="uk-container">
+		<div class="uk-grid">
+			<div class="uk-width-auto">
+				{% include "../logo.twig" %}
+			</div>
+			<div class="uk-width-expand">
+				<ul class="mobile-nav">
+					<li class="mobile-nav__item">
+						<a href="" class="mobile-nav__link js__toggle-mobile-search">
+							<svg width="20px" height="20px" class="icon-search">
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-svg/sprite/sprite.svg#search"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="mobile-nav__item">
+						<a href="" class="mobile-nav__link">
+							<svg width="18px" height="18px" class="icon-phone">
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-svg/sprite/sprite.svg#phone"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="mobile-nav__item">
+						<div class="basket">
+							<a href="order.html">
+								<span class="basket__icon">
+									<svg width="20px" height="19px" class="icon-cart">
+										<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-svg/sprite/sprite.svg#cart"></use>
+									</svg>
+
+									<span class="basket__count">4</span>
+								</span>
+							</a>
+						</div>
+					</li>
+					<li class="mobile-nav__item">
+						<a href="" class="mobile-nav__link">
+							<svg width="16px" height="19px" class="icon-user">
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-svg/sprite/sprite.svg#user"></use>
+							</svg>
+						</a>
+					</li>
+					<li class="mobile-nav__item">
+						<a href="" class="mobile-nav__link js__toggle-icon" role="button" uk-toggle="target: #offcanvas-menu-mob">
+							<svg width="24px" height="24px" class="icon-menu">
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-svg/sprite/sprite.svg#menu"></use>
+							</svg>
+							<svg width="24px" height="16px" class="icon-cross">
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-svg/sprite/sprite.svg#cross"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="uk-width-1-1">
+				<div class="mobile-search-form">
+					<form action="" class="search-form">
+						<input type="text" placeholder="Поиск товара">
+						<button>
+							<svg width="24px" height="24px" class="icon-search">
+								<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-svg/sprite/sprite.svg#search"></use>
+							</svg>
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	{% include "../offcanvas-mob-menu.twig" %}
+</div>
+<!-- end header-mob -->

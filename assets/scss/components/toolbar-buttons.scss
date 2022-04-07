@@ -1,0 +1,10 @@
+.toolbar-buttons {
+  display: flex;
+  align-items: center;
+  flex-basis: 156px;
+  justify-content: space-between;
+
+  svg {
+    fill: $prime;
+  }
+}
