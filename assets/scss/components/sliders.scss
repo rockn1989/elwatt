@@ -1,0 +1,158 @@
+.hero-slider {
+  height: 450px;
+  overflow: hidden;
+
+  &.slick-dotted {
+    margin-bottom: $gutter * 2;
+  }
+
+  &.slick-initialized {
+    height: auto;
+    overflow: visible;
+  }
+
+  .slick-prev,
+  .slick-next {
+    top: $gutter;
+    transform: unset;
+  }
+
+  .slick-prev {
+    left: auto;
+    right: $gutter * 2.5;
+  }
+
+  .slick-next {
+    right: $gutter;
+  }
+
+
+  .slide {
+
+    &__img {
+      picture {
+        position: relative;
+        height: 0;
+        padding-bottom: 56.5%;
+        min-height: 450px;
+
+        @media (min-width: $tablet-w) {
+          padding-bottom: 32.5%;
+        }
+      }
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center 0;
+      }
+    }
+
+    &__text {
+      position: absolute;
+      left: $gutter / 2;
+      bottom: $gutter * 1.5;
+      max-width: 560px;
+      @include adpFont(32, 32, 48, 48, 320, 1440);
+      font-weight: 800;
+      font-family: $secondFont;
+      text-transform: uppercase;
+      color: $white;
+
+      @media (min-width: 768px) {
+        left: $gutter;
+        bottom: $gutter * 3;
+      }
+    }
+
+    &__link {
+      position: absolute;
+      left: $gutter / 2;
+      bottom: $gutter / 2;
+      font-size: 24px;
+      line-height: 30px;
+      font-weight: 700;
+      font-family: $secondFont;
+      text-transform: uppercase;
+      color: $white;
+      border-bottom: 2px solid $white;
+
+      @media (min-width: 768px) {
+        left: $gutter;
+        bottom: $gutter;
+      }
+
+      a {
+        color: $white;
+      }
+    }
+  }
+
+  .slick-dots {
+    bottom: -40px;
+  }
+}
+
+
+.slick-prev,
+.slick-next {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $white;
+  border-radius: 50%;
+  z-index: 65;
+  transition: background-color .3s ease;
+
+  svg {
+    transition: color .3s ease;
+  }
+
+  &:before {
+    display: none;
+  }
+
+  &:hover {
+    background-color: $prime;
+  }
+}
+
+
+.slick-dots {
+  display: inline-flex;
+
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 20px;
+
+    button {
+      padding: 0;
+      width: 4px;
+      height: 4px;
+      background-color: $prime;
+      border-radius: 50%;
+      transition: width .3s ease;
+
+      &:before {
+        display: none;
+      }
+    }
+
+    &.slick-active {
+      width: 40px;
+
+      button {
+        width: 40px;
+        border-radius: 4px;
+      }
+    }
+  }
+}

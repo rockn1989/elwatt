@@ -74,6 +74,10 @@
   &__list-item {
     margin-bottom: 16px;
     padding-right: 25px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   &__list-link {

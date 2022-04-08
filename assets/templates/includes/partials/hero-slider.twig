@@ -1,0 +1,29 @@
+<!-- begin hero-slider-section -->
+<section class="hero-slider-section">
+	<div class="uk-container">
+		<div class="hero-slider">
+			{% for item in 1..3 %}
+				<div class="slide">
+					<div class="slide__img">
+						<picture>
+							<source srcset="img/media/webp/hero-banner-1.webp" media="(min-width: 768px)" type="image/webp">
+							<source srcset="img/media/webp/hero-banner-mob-1.webp" media="(min-width: 320px)" type="image/webp">
+							<source srcset="img/media/sliders/hero-banner-1.jpg" media="(min-width: 768px)" type="image/png">
+							<source srcset="img/media/sliders/hero-banner-mob-1.jpg" media="(min-width: 320px)" type="image/png">
+							<img src="img/media/sliders/hero-banner-1.jpg" alt="" loading="lazy">
+						</picture>
+					</div>
+
+					<div class="slide__text">
+						Скидка на автоматические выключатели ABB® и legrand® до 40%
+					</div>
+
+					<div class="slide__link">
+						<a href="">Подробнее</a>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>
+<!-- end hero-slider-section -->

@@ -2,12 +2,10 @@
 <clipPath id="clip0_6_1498">
 <rect width="64" height="64" fill="white"/>
 </clipPath>
-</defs><symbol id="arrow" viewBox="0 0 256 64">
-<path d="M33.5 26L39.5 32M39.5 32L33.5 38M39.5 32H25" stroke="#030303" stroke-width="2" stroke-linecap="round"/>
-<path d="M95 26L89 32M89 32L95 38M89 32H103.5" stroke="#030303" stroke-width="2" stroke-linecap="round"/>
-<path d="M154.25 30.75L160.25 24.75M160.25 24.75L166.25 30.75M160.25 24.75V39.25" stroke="#030303" stroke-width="2" stroke-linecap="round"/>
-<path d="M230.25 33.25L224.25 39.25M224.25 39.25L218.25 33.25M224.25 39.25V24.75" stroke="#030303" stroke-width="2" stroke-linecap="round"/>
-<rect x="0.5" y="0.5" width="255" height="63" rx="4.5" stroke="#7B61FF" stroke-dasharray="10 5"/>
+</defs><symbol id="arrow-left" viewBox="1 0 16.5 14">
+<path d="M8 1L2 7M2 7L8 13M2 7H16.5" stroke="#251664" stroke-width="2" stroke-linecap="round"/>
+</symbol><symbol id="arrow-right" viewBox="0 0 16.5 14">
+<path d="M9.5 1L15.5 7M15.5 7L9.5 13M15.5 7H1" stroke="#251664" stroke-width="2" stroke-linecap="round"/>
 </symbol><symbol id="bill" viewBox="0 0 64 64">
 <path d="M22.1051 55C25.2761 55 27.8469 52.4107 27.8469 49.2162V46.5983H60V49.2162C60 52.4104 57.4295 55 54.2581 55H22.1499C19.0205 55 16.4837 52.4447 16.4837 49.2924C16.4837 48.0705 16.4837 12.6202 16.4837 13.7835C16.4837 10.5893 13.9132 8 10.7418 8M10.7418 8C7.57054 8 5 10.5893 5 13.7835V16.4014H16.4834M10.7418 8L42.85 8.0003C45.9795 8.0003 48.5163 10.5556 48.5163 13.7079V46.5983M22.2255 14.3926H43.4397M22.2255 17.6803H38.1815M22.2255 25.0162H30.7475M22.2255 29.5821H30.7475M22.2255 34.148H30.7475M22.2255 38.7139H30.7475M40.6291 31.0739C38.3091 31.0739 36.4285 32.9683 36.4285 35.3052C36.4285 37.6422 38.3091 39.5363 40.6291 39.5363C42.9491 39.5363 44.8297 37.6419 44.8297 35.3052C44.8297 32.9686 42.9491 31.0739 40.6291 31.0739Z" stroke="black" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
 </symbol><symbol id="card" viewBox="0 0 64 64">
