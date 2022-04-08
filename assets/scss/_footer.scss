@@ -1,3 +1,187 @@
 .footer {
   flex-grow: 0;
+  padding: $gutter 0;
+  background-color: $bg;
+
+  @media (min-width: $tablet-w) {
+    padding: $gutter * 2 0;
+  }
+
+  &-top__inner {
+    margin-bottom: $gutter/2;
+    padding-bottom: $gutter;
+    border-bottom: 1px solid $border;
+
+    @media (min-width: $tablet-w) {
+      margin-bottom: $gutter;
+      padding-bottom: $gutter * 2;
+    }
+  }
+
+  &-bottom__inner {
+    padding-top: $gutter/2;
+
+    @media (min-width: $tablet-w) {
+      padding-top: $gutter;
+    }
+  }
+
+  &__col {
+    margin-bottom: $gutter !important;
+
+
+    @media (min-width: $tablet-w) {
+      margin-bottom: 0 !important;
+      height: 100%;
+    }
+  }
+
+  &__title {
+    position: relative;
+    margin-bottom: $gutter/2;
+    padding-right: 30px;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: $secondFont;
+    color: $prime;
+
+    @media (min-width: $tablet-w) {
+      margin-bottom: $gutter;
+    }
+
+    .icon-drop-down {
+      position: absolute;
+      top: 2px;
+      right: 0;
+
+      &.open {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &__list {
+    @include list-reset;
+    display: none;
+
+    @media (min-width: $tablet-w) {
+      display: block !important;
+    }
+  }
+
+  &__list-item {
+    margin-bottom: 16px;
+    padding-right: 25px;
+  }
+
+  &__list-link {
+    color: $black;
+
+    &:hover {
+      color: $prime;
+    }
+
+    &--icon {
+      display: flex;
+
+      svg {
+        margin-left: 10px;
+      }
+    }
+  }
+
+
+  .logo {
+    span {
+      display: none;
+
+      @media (min-width: $desk-w) {
+        display: block;
+      }
+    }
+  }
+
+  .address {
+    margin-bottom: $gutter;
+
+    @media (min-width: $tablet-w) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+
+.yandex-market {
+  margin-bottom: 56px;
+
+  a {
+    display: block;
+    color: $black;
+  }
+
+  &__text {
+    margin-bottom: 10px;
+    display: block;
+  }
+}
+
+
+.address {
+  &__item {
+    margin-bottom: 16px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.copyright {
+  text-transform: uppercase;
+}
+
+.dev,
+.politics {
+  margin-top: $gutter / 2;
+
+  @media (min-width: $mob-s) {
+    margin-top: 0;
+  }
+}
+
+.politics {
+  a {
+    color: $black;
+  }
+}
+
+
+.dev {
+  display: flex;
+
+  @media (min-width: $mob-s) {
+    justify-content: flex-end;
+  }
+
+  a {
+    position: relative;
+    padding-left: 36px;
+    display: inline-block;
+    color: $black;
+    background: url('../img/icon-svg/evrika.svg') 0 center no-repeat;
+
+    br {
+      display: none;
+
+      @media (min-width: $mob-s) {
+        display: block;
+      }
+    }
+
+    @media (min-width: $mob-s) {
+      background-position: 0 0;
+    }
+  }
 }

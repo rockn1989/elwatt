@@ -1,7 +1,233 @@
 {% block content %}
 
 	<footer class="footer">
-		999
+		<div class="footer-top">
+			<div class="uk-container">
+				<div class="footer-top__inner">
+					<div class="uk-grid">
+						<div class="uk-width-1-4@m">
+							<div class="footer__col uk-flex uk-flex-column uk-flex-between">
+								{% include "./partials/logo.twig" %}
+
+								<div class="promo uk-visible@m">
+									<div class="yandex-market">
+										<a href="">
+											<span class="yandex-market__text">
+												Нравится магазин?
+												<br>
+												Оставьте отзыв и получите скидку
+											</span>
+											<img src="img/media/yandex-market.svg" alt="Яндекс маркет" loading="lazy">
+										</a>
+									</div>
+
+									<ul class="soc-list">
+										<li>
+											<a href="">
+												<svg width="24px" height="14px" class="icon-vk">
+													<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-svg/sprite/sprite.svg#vk"></use>
+												</svg>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<svg width="12px" height="24px" class="icon-fb">
+													<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-svg/sprite/sprite.svg#fb"></use>
+												</svg>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<svg width="14px" height="24px" class="icon-ok">
+													<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-svg/sprite/sprite.svg#ok"></use>
+												</svg>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="uk-width-1-4@m">
+							<div class="footer__col">
+								<div class="footer__title">
+									Каталог
+									<div class="icon-drop-down js__mobile-list-toggle uk-hidden@m" role="button"></div>
+								</div>
+								<ul class="footer__list">
+									<li class="footer__list-item">
+										<a class="footer__list-link" href="#">Провод и кабель. Муфты. Аксессуары</a>
+									</li>
+									<li class="footer__list-item">
+										<a class="footer__list-link" href="#">Электрооборудование</a>
+									</li>
+									<li class="footer__list-item">
+										<a class="footer__list-link" href="#">Электроустановочные изделия</a>
+									</li>
+									<li class="footer__list-item">
+										<a class="footer__list-link" href="#">Теплотехника. Вентиляция. Насосы</a>
+									</li>
+									<li class="footer__list-item">
+										<a class="footer__list-link" href="#">Инструмент. Контрольно-измерительные приборы</a>
+									</li>
+									<li class="footer__list-item">
+										<a class="footer__list-link" href="#">Электромонтажные материалы и Крепеж</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="uk-width-1-4@m">
+							<div class="footer__col">
+								<div class="footer__title">
+									Магазин
+									<div class="icon-drop-down js__mobile-list-toggle uk-hidden@m" role="button"></div>
+								</div>
+								<ul class="footer__list">
+									<li class="footer__list-item">
+										<a class="footer__list-link" href="#">Бренды</a>
+									</li>
+									<li class="footer__list-item">
+										<a class="footer__list-link" href="#">О компании</a>
+									</li>
+									<li class="footer__list-item">
+										<a class="footer__list-link" href="#">Оплата и доставка</a>
+									</li>
+									<li class="footer__list-item">
+										<a class="footer__list-link" href="#">Партнерам</a>
+									</li>
+									<li class="footer__list-item">
+										<a class="footer__list-link footer__list-link--icon" href="#">
+											<span>Купон на скидку</span>
+
+											<svg width="14px" height="14px" class="icon-percent">
+												<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-svg/sprite/sprite.svg#percent"></use>
+											</svg>
+										</a>
+									</li>
+									<li class="footer__list-item">
+										<a class="footer__list-link" href="#">Отзывы</a>
+									</li>
+									<li class="footer__list-item">
+										<a class="footer__list-link" href="#">Статьи</a>
+									</li>
+									<li class="footer__list-item">
+										<a class="footer__list-link" href="#">Контакты</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="uk-width-1-4@m">
+							<div class="footer__col">
+								<div class="footer__title">Контакты</div>
+								<div class="contacts contacts--footer">
+									<div class="contacts__item">
+										<a href="tel:+79267868151" class="contacts__link">
+											<span>+7 (926) 786 81 51</span>
+											<span class="icons">
+												<svg width="22px" height="22px" class="icon-whataspp">
+													<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-svg/sprite/sprite.svg#whatsapp"></use>
+												</svg>
+												<svg width="22px" height="22px" class="icon-viber">
+													<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-svg/sprite/sprite.svg#viber"></use>
+												</svg>
+											</span>
+										</a>
+										<div class="contacts__text">
+											Ежедневно с 09.00 до 18.00
+										</div>
+									</div>
+									<div class="contacts__item">
+										<a href="tel:+74955323596" class="contacts__link">
+											<span>8 (495) 532 35 96</span>
+										</a>
+										<div class="contacts__text">
+											<a href="#callback" uk-toggle>Заказать звонок</a>
+										</div>
+									</div>
+									<div class="contacts__item">
+										<a href="mailto: elwatt@yandex.ru" class="contacts__link">
+											elwatt@yandex.ru
+										</a>
+									</div>
+								</div>
+
+								<div class="address">
+									<div class="address__item">
+										ТК «Мельница»
+										<br>
+										41-й километр МКАД
+									</div>
+									<div class="address__item">
+										«Синдика»
+										<br>
+										65-й километр МКАД
+									</div>
+								</div>
+								<div class="promo uk-hidden@m">
+									<div class="yandex-market">
+										<a href="">
+											<span class="yandex-market__text">
+												Нравится магазин?
+												<br>
+												Оставьте отзыв и получите скидку
+											</span>
+											<img src="img/media/yandex-market.svg" alt="Яндекс маркет" loading="lazy">
+										</a>
+									</div>
+
+									<ul class="soc-list">
+										<li>
+											<a href="">
+												<svg width="24px" height="14px" class="icon-vk">
+													<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-svg/sprite/sprite.svg#vk"></use>
+												</svg>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<svg width="12px" height="24px" class="icon-fb">
+													<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-svg/sprite/sprite.svg#fb"></use>
+												</svg>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<svg width="14px" height="24px" class="icon-ok">
+													<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-svg/sprite/sprite.svg#ok"></use>
+												</svg>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="footer-bottom">
+			<div class="footer-bottom__inner">
+				<div class="uk-container">
+					<div class="uk-grid">
+						<div class="uk-width-1-4@s">
+							<div class="copyright">ООО «ГРЕЙС-ТОРГ» 2022</div>
+						</div>
+						<div class="uk-width-1-4@s">
+							<div class="politics">
+								<a href="">Политика конфиденциальности</a>
+							</div>
+						</div>
+						<div class="uk-width-1-2@s">
+							<div class="dev">
+								<a href="https://aevrika.ru" target="_blank">Разработка и поддержка —
+									<br>
+									ЭВРИКА</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</footer>
 
 {% endblock %}

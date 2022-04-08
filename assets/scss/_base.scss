@@ -45,3 +45,18 @@ body.menu-open .page-wrapper:after {
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
 }
+
+
+.icon-drop-down {
+  width: 24px;
+  height: 24px;
+  background: url('../img/icon-svg/drop-down.svg') center no-repeat;
+  background-size: contain;
+}
+
+.icon-drop-up {
+  width: 24px;
+  height: 24px;
+  background: url('../img/icon-svg/drop-up.svg') center no-repeat;
+  background-size: 100%;
+}
