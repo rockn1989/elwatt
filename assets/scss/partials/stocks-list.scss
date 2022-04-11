@@ -1,0 +1,99 @@
+.main-stocks-list {
+  margin-bottom: $gutter;
+
+  .stock-card__text {
+    margin-bottom: 0;
+  }
+
+  .stock-card__date {
+    display: none;
+  }
+
+  .uk-grid {
+    &>div {
+      &:last-child {
+        .stock-card__inner {
+          border-right: none;
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}
+
+.stocks-link {
+  margin-top: -20px;
+  margin-bottom: 20px;
+  display: block;
+  text-align: right;
+
+  @media (min-width: $tablet-w) {
+    margin-top: -40px;
+    margin-bottom: 40px;
+  }
+}
+
+.stock-card {
+  margin-bottom: $gutter !important;
+  padding: $gutter / 2;
+  height: 100%;
+  background: $bg;
+
+  &__inner {
+    height: 100%;
+  }
+
+  &__title {
+    margin-bottom: $gutter / 2;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: $secondFont;
+    font-size: 24px;
+    line-height: 30px;
+
+    &>a {
+      position: relative;
+      padding-right: $gutter * 2;
+      display: block;
+
+      svg {
+        position: absolute;
+        top: 7px;
+        right: 0;
+      }
+
+    }
+  }
+
+  &__status {
+    position: absolute;
+    top: 0;
+    right: 44px;
+    display: block;
+
+    img {
+      margin-left: 20px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+  &__text {
+    margin-bottom: $gutter / 2;
+  }
+
+  &__date {
+    color: $gray;
+  }
+
+  &--divider {
+    .stock-card__inner {
+      @media (min-width: $tablet-w) {
+        padding-right: $gutter;
+        border-right: 1px solid $border;
+      }
+    }
+  }
+}

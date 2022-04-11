@@ -28,6 +28,16 @@
     }
   }
 
+  &--red {
+    background-color: $red;
+    border-color: $red;
+
+    &:hover {
+      background-color: $prime;
+      border-color: $prime;
+    }
+  }
+
   &--icon {
     display: inline-flex;
     justify-content: space-between;
@@ -40,8 +50,8 @@
 
     svg {
       margin-right: 16px;
-      width: 12px;
-      height: 12px;
+      // width: 12px;
+      // height: 12px;
       flex-shrink: 0;
     }
   }

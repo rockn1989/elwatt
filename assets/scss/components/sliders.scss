@@ -3,7 +3,11 @@
   overflow: hidden;
 
   &.slick-dotted {
-    margin-bottom: $gutter * 2;
+    margin-bottom: $gutter;
+
+    @media (min-width: $tablet-w) {
+      margin-bottom: $gutter * 2;
+    }
   }
 
   &.slick-initialized {
@@ -15,6 +19,7 @@
   .slick-next {
     top: $gutter;
     transform: unset;
+    background-color: $white;
   }
 
   .slick-prev {
@@ -94,6 +99,10 @@
 
   .slick-dots {
     bottom: -40px;
+
+    @media (min-width: $tablet-w) {
+      bottom: -60px;
+    }
   }
 }
 
@@ -105,7 +114,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: $white;
   border-radius: 50%;
   z-index: 65;
   transition: background-color .3s ease;
@@ -122,6 +130,31 @@
     background-color: $prime;
   }
 }
+
+.slick-prev {
+  background: $bg url('../img/icon-svg/arrow-left-purple.svg') center no-repeat;
+  background-size: 12px 14px;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background: $prime url('../img/icon-svg/arrow-left-white.svg') center no-repeat;
+    background-size: 12px 14px;
+  }
+}
+
+.slick-next {
+  background: $bg url('../img/icon-svg/arrow-right-purple.svg') center no-repeat;
+  background-size: 12px 14px;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background: $prime url('../img/icon-svg/arrow-right-white.svg') center no-repeat;
+    background-size: 12px 14px;
+  }
+}
+
 
 
 .slick-dots {
@@ -153,6 +186,55 @@
         width: 40px;
         border-radius: 4px;
       }
+    }
+  }
+}
+
+
+
+/*___ Hit slider ___*/
+
+.hit-slider {
+  padding: 20px;
+
+  @media (min-width: $tablet-w) {
+    padding: 50px 30px 40px;
+  }
+
+  .slider {
+    @media (min-width: $tablet-w) {
+      height: 196px;
+      overflow: hidden;
+
+      &.slick-initialized {
+        height: auto;
+        overflow: visible;
+      }
+    }
+  }
+
+  .slick-prev,
+  .slick-next {
+    top: 100px;
+
+    @media (min-width: $desk-w) {
+      top: auto;
+      bottom: 0;
+      left: 0;
+      right: auto;
+      transform: unset;
+    }
+  }
+
+  .slick-prev {
+    left: -10px;
+  }
+
+  .slick-next {
+    right: -10px;
+
+    @media (min-width: $desk-w) {
+      left: 60px;
     }
   }
 }

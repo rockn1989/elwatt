@@ -15,8 +15,8 @@
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
-      prevArrow: '<div class="btn-slide slick-prev"><svg width="14px" height="12px" class="icon-arrow-left"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-svg/sprite/sprite.svg#arrow-left"></use></svg></div>',
-      nextArrow: '<div class="btn-slide slick-next"><svg width="14px" height="12px" class="icon-arrow-right"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-svg/sprite/sprite.svg#arrow-right"></use></svg></div>',
+      prevArrow: '<div class="btn-slide slick-prev"></div>',
+      nextArrow: '<div class="btn-slide slick-next"></div>',
       responsive: [
         {
           breakpoint: 960,
