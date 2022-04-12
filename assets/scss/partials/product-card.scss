@@ -12,6 +12,7 @@
 
       img {
         max-width: 100%;
+        max-height: 100%;
       }
     }
   }
@@ -116,6 +117,14 @@
 
     .product-card__toolbar {
       right: 30px;
+    }
+
+    .product-card__img {
+      margin-bottom: 20px;
+
+      @media (min-width: $tablet-w) {
+        margin-bottom: 0;
+      }
     }
   }
 }

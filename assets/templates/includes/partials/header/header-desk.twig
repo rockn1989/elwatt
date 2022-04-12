@@ -103,59 +103,32 @@
 								<div class="dropdown-menu" uk-dropdown="pos: bottom-justify; offset: 0; boundary: #header-boundry; boundary-align: true; delay-hide: 100;">
 									<div class="uk-container">
 										<div class="dropdown-menu__inner">
-											<div class="uk-grid" uk-grid>
-												<div class="uk-width-1-3">
-													<div class="dropdown-menu__item">
-														<ul class="dropdown-menu__list">
-															<li>
-																<a>Лицензии 1С:Предприятие 8</a>
-															</li>
-															<li>
-																<a>1С:Бухгалтерия 8</a>
-															</li>
-															<li>
-																<a>1С:Зарплата и Управление Персоналом 8</a>
-															</li>
-															<li>
-																<a>1С:Управление Торговлей 8</a>
-															</li>
-															<li>
-																<a>1С Комплексная Автоматизация 8</a>
-															</li>
+											<div class="uk-grid">
+												<div class="uk-width-1-2@m">
+													<div class="title-h1">В нашем каталоге
+														<br>
+														более 30 производителей</div>
+
+													<div class="brands-pictures">
+														<ul class="brands-pictures__list">
+															{% for i in 1..13 %}
+																<li class="brands-pictures__list-item"><img src="img/media/webp/brand-img-{{i}}.webp" alt="" loading="lazy"></li>
+															{% endfor %}
 														</ul>
+														<a href="" class="uk-visible@m">Все производители</a>
 													</div>
 												</div>
-												<div class="uk-width-1-3">
-													<div class="dropdown-menu__item">
-														<ul class="dropdown-menu__list">
+												<div class="uk-width-1-2@m">
+													<ul class="brands-titles">
+														{% for i in 1..3 %}
 															<li>
-																<a>Лицензии 1С:Предприятие 8</a>
+																{% for k in 1..18 %}
+																	<a href="">Brand-name-{{k}}</a>
+																{% endfor %}
 															</li>
-															<li>
-																<a>1С:Бухгалтерия 8</a>
-															</li>
-															<li>
-																<a>1С:Зарплата и Управление Персоналом 8</a>
-															</li>
-															<li>
-																<a>1С:Управление Торговлей 8</a>
-															</li>
-															<li>
-																<a>1С Комплексная Автоматизация 8</a>
-															</li>
-														</ul>
-													</div>
-												</div>
-
-												<div class="uk-width-1-3">
-													<div class="dropdown-menu__item">
-														<div class="title-h3">Перейди в облако.
-															<br>Это надежнее, быстрее и дешевле</div>
-
-														<div class="btn-wrapper">
-															<a href="" class="btn btn--yellow">15 дней бесплатно</a>
-														</div>
-													</div>
+														{% endfor %}
+													</ul>
+													<a href="" class="uk-hidden@m">Все производители</a>
 												</div>
 											</div>
 										</div>

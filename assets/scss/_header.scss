@@ -21,8 +21,6 @@
 .header-nav-buttons {
   display: flex;
 
-  &__item {}
-
   a {
     &:first-child {
       margin-right: 12px;
@@ -36,7 +34,7 @@
   box-shadow: none;
 
   &>.uk-container {
-    padding: $gutter 0;
+    padding: $gutter;
   }
 }
 

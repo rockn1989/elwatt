@@ -1,0 +1,34 @@
+<!-- begin brands-section -->
+<section class="brands-section">
+	<div class="uk-container">
+		<div class="uk-grid">
+			<div class="uk-width-1-2@m">
+				<div class="title-h1">В нашем каталоге
+					<br>
+					более 30 производителей</div>
+
+				<div class="brands-pictures">
+					<ul class="brands-pictures__list">
+						{% for i in 1..12 %}
+							<li class="brands-pictures__list-item"><img src="img/media/webp/brand-img-{{i}}.webp" alt="" loading="lazy"></li>
+						{% endfor %}
+					</ul>
+					<a href="" class="uk-visible@m">Все производители</a>
+				</div>
+			</div>
+			<div class="uk-width-1-2@m">
+				<ul class="brands-titles">
+					{% for i in 1..3 %}
+						<li>
+							{% for k in 1..18 %}
+								<a href="">Brand-name-{{k}}</a>
+							{% endfor %}
+						</li>
+					{% endfor %}
+				</ul>
+				<a href="" class="uk-hidden@m">Все производители</a>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- end brands-section -->

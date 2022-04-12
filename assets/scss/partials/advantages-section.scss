@@ -1,0 +1,20 @@
+.advantages-section {
+  margin-bottom: $gutter * 1.5;
+
+  @media (min-width: $tablet-w) {
+    margin-bottom: $gutter * 3;
+  }
+
+  &__text {
+    padding-bottom: $gutter / 2;
+    border-bottom: 1px solid $border;
+
+    @media (min-width: $tablet-w) {
+      padding-right: $gutter;
+      padding-bottom: 0;
+      height: 100%;
+      border-right: 1px solid $border;
+      border-bottom: none;
+    }
+  }
+}

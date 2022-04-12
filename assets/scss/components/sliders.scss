@@ -238,3 +238,126 @@
     }
   }
 }
+
+
+/*___ Stocks slider ___*/
+
+.stocks-slider {
+  height: 450px;
+  overflow: hidden;
+
+  &.slick-dotted {
+    margin-bottom: $gutter;
+
+    @media (min-width: $tablet-w) {
+      margin-bottom: $gutter * 2;
+    }
+  }
+
+  &.slick-initialized {
+    height: auto;
+    overflow: visible;
+  }
+
+  .slick-prev,
+  .slick-next {
+    top: $gutter / 2;
+    transform: unset;
+
+    @media (min-width: $tablet-w) {
+      top: $gutter
+    }
+  }
+
+  .slick-prev {
+    left: auto;
+    right: $gutter * 2;
+
+    @media (min-width: $tablet-w) {
+      right: $gutter * 2.5;
+    }
+  }
+
+  .slick-next {
+    right: $gutter / 2;
+
+    @media (min-width: $tablet-w) {
+      right: $gutter;
+    }
+  }
+
+
+  .slide {
+
+    &__img {
+      picture {
+        position: relative;
+        height: 0;
+        padding-bottom: 56.5%;
+        min-height: 450px;
+
+        @media (min-width: $tablet-w) {
+          padding-bottom: 32.5%;
+        }
+      }
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center 0;
+      }
+    }
+
+    &__text {
+      position: absolute;
+      left: $gutter / 2;
+      bottom: $gutter * 1.5;
+      max-width: 560px;
+      @include adpFont(32, 32, 48, 48, 320, 1440);
+      font-weight: 800;
+      font-family: $secondFont;
+      text-transform: uppercase;
+      color: $white;
+      word-break: break-word;
+
+      @media (min-width: 768px) {
+        left: $gutter;
+        bottom: $gutter * 3;
+      }
+    }
+
+    &__link {
+      position: absolute;
+      left: $gutter / 2;
+      bottom: $gutter / 2;
+      font-size: 24px;
+      line-height: 30px;
+      font-weight: 700;
+      font-family: $secondFont;
+      text-transform: uppercase;
+      color: $white;
+      border-bottom: 2px solid $white;
+
+      @media (min-width: 768px) {
+        left: $gutter;
+        bottom: $gutter;
+      }
+
+      a {
+        color: $white;
+      }
+    }
+  }
+
+  .slick-dots {
+    bottom: -40px;
+
+    @media (min-width: $tablet-w) {
+      bottom: -60px;
+    }
+  }
+}
