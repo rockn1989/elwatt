@@ -111,3 +111,20 @@
     }
   }
 }
+
+
+.catalog-group {
+  margin-bottom: $gutter * 1.5 !important;
+
+  @media (min-width: $tablet-w) {
+    margin-bottom: $gutter * 3 !important;
+  }
+
+  .catalog-item__links {
+    display: none;
+
+    @media (min-width: $tablet-w) {
+      display: block;
+    }
+  }
+}

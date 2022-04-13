@@ -1,9 +1,9 @@
 'use strict';
 
-(function () {
+$(function () {
   
   const $hitSlider = $('.hit-slider .slider');
 
   $hitSlider.slick();
 
-})();
+});

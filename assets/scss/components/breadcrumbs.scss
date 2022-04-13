@@ -1,0 +1,46 @@
+.breadcrumbs-wrapper {
+  margin: $gutter / 2 0 $gutter;
+}
+
+.breadcrumbs {
+  @include list-reset();
+  display: flex;
+  overflow-x: auto;
+
+  li {
+    position: relative;
+    margin-right: $gutter / 2;
+    padding-right: $gutter / 2;
+    display: block;
+    white-space: nowrap;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 1px;
+      height: 24px;
+      background: $border;
+      display: block;
+    }
+
+    &:last-child {
+      margin-right: 0;
+      padding-right: 0;
+
+      &:after {
+        display: none;
+      }
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    a,
+    span {
+      color: $gray;
+    }
+  }
+}

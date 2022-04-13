@@ -4,7 +4,7 @@
 	<body>
 		<div class="page-wrapper">
 			{% include "../includes/header.twig" %}
-
+			{% block breadcrumbs %}{% endblock %}
 			<main class="main"> {% block content %}{% endblock %}
 				</main>
 				{% include "../includes/footer.twig" %}

@@ -1,6 +1,6 @@
 'use strict';
 
-(function () {
+$(function () {
 
   const $heroSlider = $('.stocks-slider');
 
@@ -27,4 +27,4 @@
       ],
     });
 
-})();
+});

@@ -12,8 +12,23 @@ body {
   box-sizing: border-box;
 }
 
-main {
+.main {
   flex-grow: 1;
+  padding-bottom: $gutter * 1.5;
+
+  @media (min-width: $tablet-w) {
+    padding-bottom: $gutter * 3;
+  }
+
+  &>*:last-child {
+    margin-bottom: 0;
+  }
+
+  &>.uk-container {
+    &*:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
 body.menu-open .header {

@@ -1,0 +1,19 @@
+.seo-block {
+  margin-bottom: $gutter * 1.5;
+
+  @media (min-width: $tablet-w) {
+    margin-bottom: $gutter * 3;
+  }
+
+  &__text {
+    padding-top: $gutter / 2;
+    border-top: 1px solid $border;
+
+    @media (min-width: $tablet-w) {
+      padding-top: 0;
+      border-top: none;
+      padding-left: $gutter;
+      border-left: 1px solid $border;
+    }
+  }
+}
