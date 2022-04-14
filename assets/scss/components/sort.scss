@@ -1,0 +1,46 @@
+.sort {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  &__title {
+    margin-right: 24px;
+    margin-bottom: $gutter / 2;
+  }
+
+  &__list {
+    @include list-reset();
+    display: flex;
+    margin-bottom: $gutter / 2;
+
+    li {
+      margin-left: 24px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      a {
+        display: flex;
+        align-items: center;
+
+        svg {
+          margin-left: 10px;
+          flex-shrink: 0;
+        }
+
+        &.sort-up {
+          svg {
+            transform: rotate(0);
+          }
+        }
+
+        &.sort-down {
+          svg {
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
+  }
+}

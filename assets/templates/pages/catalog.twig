@@ -1,0 +1,228 @@
+{% extends "../layouts/inner-page.twig" %}
+{% set title="ABB" %}
+{% set bread = ['Главная', 'Каталог', 'Электрооборудование', 'Автоматические выключатели'] %}
+
+{% block content %}
+
+	<!-- begin catalog-section -->
+	<section class="catalog-section">
+		<div class="uk-container">
+			<h1>Автоматические выключатели</h1>
+
+			<div class="tags-list-wrapper">
+				<ul class="tags-list">
+					<li class="active" filter-control>
+						<a>25A</a>
+					</li>
+					<li filter-control>
+						<a>BA63</a>
+					</li>
+					<li filter-control>
+						<a>ABB</a>
+					</li>
+				</ul>
+				<a href="#" class="tags-reset" role="button" filter-control="reset">Сбросить</a>
+			</div>
+
+
+			<div class="catalog">
+				<div class="uk-grid">
+					<div class="uk-width-1-5@m">
+						<div class="left-sidebar">
+							<div class="filter-btn js__toggle-sidebar uk-hidden@m">
+								Открыть фильтр
+								<i class="filter-btn__icon">
+									<img src="img/icon-svg/drop-down.svg" width="12" height="6" alt="">
+								</i>
+							</div>
+							<div class="left-sidebar__inner">
+								<div class="filter-menu"></div>
+							</div>
+						</div>
+					</div>
+					<div class="uk-width-4-5@m">
+						<div class="catalog__header">
+							<div class="stock-card">
+								<div class="stock-card__inner">
+									<div class="stock-card__title">
+										<a href="">
+											30% скидка на Devi
+
+											<span class="stock-card__status"></span>
+											<svg width="14px" height="12px" class="icon-arrow-right">
+												<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-svg/sprite/sprite.svg#arrow-right-purple"></use>
+											</svg>
+										</a>
+									</div>
+									<div class="stock-card__text">Для скидки в интернет магазине используйте промо-код: BOH232</div>
+									<div class="stock-card__date">до 01 мая 2022</div>
+								</div>
+							</div>
+
+							<div class="sort">
+								<div class="sort__title">Сортитировать по:</div>
+								<ul class="sort__list">
+									<li>
+										<a href="#" class="sort-up">
+											цене
+
+											<svg width="14px" height="12px" class="">
+												<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-svg/sprite/sprite.svg#arrow-up"></use>
+											</svg>
+										</a>
+									</li>
+									<li>
+										<a href="#">названию</a>
+									</li>
+									<li>
+										<a href="#">популярности</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="catalog__body">
+							<div class="uk-grid uk-grid-collapse">
+								{% for i in 1..9 %}
+									{% if i == 2 %}
+										<div class="uk-width-1-2@s uk-width-1-3@l">
+											<div class="product-card">
+												<header class="product-card__header">
+													<div class="product-card__img" uk-lightbox>
+														<a href="img/media/catalog/catalog-img-{{i}}.png">
+															<img src="img/media/catalog/catalog-img-{{i}}.png" alt="" loading="lazy">
+														</a>
+													</div>
+													<div class="product-card__stocks">
+														<div class="stock__new">новое</div>
+													</div>
+													<div class="product-card__toolbar">
+														<a href="" class="favorite active"></a>
+														<a href="" class="comparison"></a>
+													</div>
+												</header>
+												<section class="product-card__body">
+													<div class="product-card__title">
+														<a href="">
+															Aвтоматический выключатель ABB 1-полюсный SH201L C10 однофазный Aвтоматический выключатель ABB 1-полюсный SH201L C10 однофазный Aвтоматический выключатель ABB 1-полюсный SH201L C10 однофазный</a>
+													</div>
+													<div class="product-card__footer">
+														<div class="product-card__prices">
+															<div class="old-price">323.16 ₽</div>
+															<div class="current-price">306.06 ₽</div>
+														</div>
+														<div class="product-card__controls">
+															<div class="calc">
+																<span class="calc__min">
+																	<svg width="16px" height="24px" class="icon-minus">
+																		<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-svg/sprite/sprite.svg#minus"></use>
+																	</svg>
+																</span>
+																<input type="text" class="calc__value" value="1">
+																<span class="calc__plus">
+																	<svg width="16px" height="24px" class="icon-plus">
+																		<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-svg/sprite/sprite.svg#plus"></use>
+																	</svg>
+																</span>
+															</div>
+															<a href="" class="btn btn--red btn--icon">
+																<svg width="20px" height="19px" class="icon-cart">
+																	<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-svg/sprite/sprite.svg#cart"></use>
+																</svg>
+																В Корзину
+															</a>
+														</div>
+													</div>
+												</section>
+											</div>
+										</div>
+									{% else %}
+										<div class="uk-width-1-2@s uk-width-1-3@l">
+											<div class="product-card">
+												<header class="product-card__header">
+													<div class="product-card__img" uk-lightbox>
+														<a href="img/media/catalog/catalog-img-{{i}}.png">
+															<img src="img/media/catalog/catalog-img-{{i}}.png" alt="" loading="lazy">
+														</a>
+													</div>
+													<div class="product-card__stocks">
+														<div class="stock__hit">хит</div>
+														<div class="stock__new">новое</div>
+													</div>
+													<div class="product-card__toolbar">
+														<a href="" class="favorite"></a>
+														<a href="" class="comparison"></a>
+													</div>
+												</header>
+												<section class="product-card__body">
+													<div class="product-card__title">
+														<a href="">Aвтоматический выключатель ABB 1-полюсный SH201L C10 однофазный</a>
+													</div>
+													<div class="product-card__footer">
+														<div class="product-card__prices">
+															<div class="old-price">323.16 ₽</div>
+															<div class="current-price">306.06 ₽</div>
+														</div>
+														<div class="product-card__controls">
+															<div class="calc">
+																<span class="calc__min">
+																	<svg width="16px" height="24px" class="icon-minus">
+																		<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-svg/sprite/sprite.svg#minus"></use>
+																	</svg>
+																</span>
+																<input type="text" class="calc__value" value="1">
+																<span class="calc__plus">
+																	<svg width="16px" height="24px" class="icon-plus">
+																		<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-svg/sprite/sprite.svg#plus"></use>
+																	</svg>
+																</span>
+															</div>
+															<a href="" class="btn btn--red btn--icon">
+																<svg width="20px" height="19px" class="icon-cart">
+																	<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-svg/sprite/sprite.svg#cart"></use>
+																</svg>
+																В Корзину
+															</a>
+														</div>
+													</div>
+												</section>
+											</div>
+										</div>
+									{% endif %}
+								{% endfor %}
+							</div>
+						</div>
+
+						<div class="catalog__footer">
+							<div class="load-more btn btn--white">Показать еще</div>
+
+							{% include "../includes/components/pagination.twig" %}
+
+						</div>
+
+						<div class="seo-block">
+							<div class="uk-grid">
+								<div class="uk-width-1-2@m">
+									<div class="seo-block__title">
+										<div class="title-h1">Польза электро-технических изделий</div>
+									</div>
+								</div>
+								<div class="uk-width-1-2@m">
+									<div class="seo-block__text">
+										<p>Интернет-магазин EL-WATT занимается продажей сертифицированной электротехнической продукции. 	В наличии качественные электротовары известных брендов. Сотрудники компании тщательно проверяют состояние каждого изделия на предмет отсутствия каких-либо дефектов и признаков заводского брака. Доставка электротоваров возможна по всей территории Москвы, Московской области и других регионов.</p>
+										<p>Если вы не смогли найти определенный товар на страницах нашего интернет магазина электрики, мы готовы оформить заявку под заказ и найти наиболее выгодное для вас предложение. Наших постоянных оптовых клиентов мы всегда поощряем дополнительными скидками или услугами. При особо тесном сотрудничестве наш магазин может предоставить рассрочку на выплату суммы за партию товаров.</p>
+										<a href="">О компании</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</section>
+	<!-- end catalog-section -->
+
+{% endblock %}

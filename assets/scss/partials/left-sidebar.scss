@@ -1,0 +1,23 @@
+.left-sidebar {
+  position: relative;
+  margin-bottom: $gutter / 2 !important;
+
+  &__inner {
+    padding: $gutter / 2;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    border: 1px solid $border;
+    border-top: none;
+    background-color: $white;
+    z-index: 25;
+
+    @media (min-width: $tablet-w) {
+      position: static;
+      display: block !important;
+      border-top: 1px solid $border;
+    }
+  }
+}

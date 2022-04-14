@@ -1,0 +1,61 @@
+.uk-pagination {
+  margin-bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+
+  a,
+  span {
+    padding: 5px;
+    width: 48px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $prime;
+    border-radius: $borderRadius;
+    border: 1px solid transparent;
+    transition: border-color .3s, background-color .3s, color .3s ease;
+
+    &:hover {
+      border-color: $prime;
+    }
+  }
+
+  li {
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &.uk-active {
+      a {
+        border-color: $prime;
+
+        &:hover {
+          color: $white;
+          background-color: $prime;
+        }
+      }
+    }
+
+    &.next {
+      display: none;
+
+      a {
+        padding: 0 20px;
+        width: auto;
+        border-color: $prime;
+
+        &:hover {
+          color: $white;
+          background-color: $prime;
+        }
+      }
+
+      @media (min-width: 768px) {
+        display: block;
+      }
+    }
+  }
+}

@@ -34,10 +34,14 @@
 }
 
 .stock-card {
-  margin-bottom: $gutter !important;
+  margin-bottom: $gutter / 2 !important;
   padding: $gutter / 2;
   height: 100%;
   background: $bg;
+
+  @media (min-width: $tablet-w) {
+    margin-bottom: $gutter !important;
+  }
 
   &__inner {
     height: 100%;
@@ -80,11 +84,10 @@
     }
   }
 
-  &__text {
-    margin-bottom: $gutter / 2;
-  }
+  &__text {}
 
   &__date {
+    margin-top: $gutter / 2;
     color: $gray;
   }
 

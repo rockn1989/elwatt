@@ -62,4 +62,13 @@ $(function () {
     $(this).text($(this).text() === 'Показать еще' ? 'Скрыть' : 'Показать еще');
   });
 
+  /**
+   * Toggle left sidebar
+   */
+
+  $('.js__toggle-sidebar').on('click', function (e) {
+    e.preventDefault();
+    $('.left-sidebar__inner').stop(true, true).slideToggle('350')
+  })
+
 });
