@@ -1,0 +1,39 @@
+.brands-products {
+  margin-bottom: $gutter * 1.5;
+
+  @media (min-width: $tablet-w) {
+    margin-bottom: $gutter * 3;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.brand-card {
+  padding: $gutter / 2;
+  height: 100%;
+  border: 1px solid $border;
+
+  &__links {
+    @include list-reset();
+    max-height: 100px;
+    overflow: hidden;
+
+    a {
+      color: $black;
+    }
+
+    &.show {
+      max-height: 100%;
+    }
+  }
+
+  &__img,
+  &__title,
+  &__links {
+    margin-bottom: $gutter / 2;
+  }
+
+}

@@ -51,4 +51,15 @@ $(function () {
       .slideToggle("350");
   });
 
+
+  /**
+   * Show hidden list
+   */
+
+  $('.js__show-list').on('click', function (e) {
+    e.preventDefault();
+    $(this).parent('*').find('ul').toggleClass('show');
+    $(this).text($(this).text() === 'Показать еще' ? 'Скрыть' : 'Показать еще');
+  });
+
 });

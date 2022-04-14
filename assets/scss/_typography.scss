@@ -70,10 +70,6 @@ h3,
 
 p {
   margin-bottom: $gutter/2;
-
-  @media (min-width: $tablet-w) {
-    margin-bottom: $gutter;
-  }
 }
 
 
