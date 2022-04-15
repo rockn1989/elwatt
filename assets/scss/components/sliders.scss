@@ -240,6 +240,26 @@
 }
 
 
+.main-nav {
+  .hit-slider {
+    padding: 0;
+
+    .slick-prev,
+    .slick-next {
+      top: -80px;
+      left: auto;
+    }
+
+    .slick-prev {
+      right: 68px;
+    }
+
+    .slick-next {
+      right: 0px;
+    }
+  }
+}
+
 /*___ Stocks slider ___*/
 
 .stocks-slider {

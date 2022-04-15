@@ -1,0 +1,147 @@
+form {
+  &:disabled {
+    opacity: 0.5;
+    cursor: no-drop;
+  }
+}
+
+.filter-form {
+  fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+    padding: $gutter / 2;
+    padding-bottom: 0;
+
+    &:first-child {
+      padding-top: 20px;
+    }
+
+    &:last-of-type {
+      &.open {
+        padding-bottom: 0;
+        border: none;
+      }
+    }
+
+    &.open {
+      padding-bottom: $gutter / 2;
+      border-bottom: 1px solid $border;
+
+      .group-title {
+        padding-bottom: $gutter / 2;
+      }
+    }
+  }
+
+  .buttons {
+    margin-top: $gutter / 2;
+    padding: $gutter / 2;
+    border-top: 1px solid $border;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.group-title {
+  position: relative;
+  padding-right: 25px;
+  cursor: pointer;
+  user-select: none;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: url('../img/icon-svg/drop-down-gray.svg') center no-repeat;
+    background-size: 12px 6px;
+  }
+}
+
+.group-list {
+  user-select: none;
+
+  &.open {
+    display: block;
+  }
+
+  &__item {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &.no-scrollbar {
+    height: auto;
+  }
+}
+
+
+.custom-checkbox {
+  position: relative;
+  display: flex;
+  cursor: pointer;
+
+
+  input[type="checkbox"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    visibility: hidden;
+
+    &:checked {
+      ~.custom-checkbox__input {
+        background-color: $prime;
+
+        &:after {
+          display: block;
+        }
+      }
+    }
+
+    &:disabled {
+
+      ~.custom-checkbox__input,
+      ~.custom-checkbox__label {
+        opacity: 0.5;
+        cursor: no-drop;
+      }
+    }
+  }
+
+  &__input {
+    position: relative;
+    margin-right: 12px;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background-color: $border;
+    transition: background-color .3s ease;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 6px;
+      left: 50%;
+      display: block;
+      width: 6px;
+      height: 10px;
+      border-right: 2px solid $white;
+      border-bottom: 2px solid $white;
+      transform: translateX(-50%) rotate(45deg);
+      display: none;
+    }
+  }
+}

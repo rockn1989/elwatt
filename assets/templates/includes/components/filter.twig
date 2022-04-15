@@ -1,0 +1,123 @@
+{% set brands = ['ABB', 'ASD', 'ASTRA', 'Berker', 'Cabues', 'ABB2', 'ASD2', 'ASTRA2', 'Berker2', 'Cabues2'] %}
+{% set count = ['15', '123', '0', '3', '2', '15', '123', '0', '3', '2',] %}
+{% set types = [
+  'Тип изделия', 
+  'Количество полюсов',
+  'Характеристика',
+  'Тип УЗО',
+  'Номинальный ток',
+  'Отключающая способность',
+  'Ток утечки',
+  'Номинальное напряжение',
+  'Способ монтажа'
+  ] 
+%}
+<div class="filter">
+	<form class="filter-form">
+		<fieldset class="open">
+			<div class="group-title open-title js__group-title-toggle">Цена</div>
+			<div class="group-list open no-scrollbar">
+				<div class="ui-slider-box">
+
+					<div class="input-box">
+						<div class="input-section">
+							<div class="small-gray-title">От</div>
+							<input type="number" id="min" class="price-input-min js__ui-slider">
+						</div>
+						<div class="separate"></div>
+						<div class="input-section">
+							<div class="small-gray-title">До</div>
+							<input type="number" id="max" class="price-input-max js__ui-slider">
+						</div>
+					</div>
+					<div class="ui-slider-wrapper">
+						<div id="ui-slider" class="ui-slider"></div>
+					</div>
+				</div>
+			</div>
+		</fieldset>
+
+		<fieldset class="open">
+			<div class="group-title open-title js__group-title-toggle">Бренд</div>
+			<div class="group-list open">
+				{% for index, label in brands %}
+					{% if index == 1 %}
+						<div class="group-list__item">
+							<label for="{{index}}" class="custom-checkbox">
+								<input id="{{index}}" type="checkbox" checked>
+								<span class="custom-checkbox__input"></span>
+								<span class="custom-checkbox__label">{{label}}</span>
+							</label>
+							<div class="label-count">{{count[index]}}</div>
+						</div>
+					{% elseif index == 2 %}
+						<div class="group-list__item">
+							<label for="{{index}}" class="custom-checkbox">
+								<input id="{{index}}" type="checkbox" disabled>
+								<span class="custom-checkbox__input"></span>
+								<span class="custom-checkbox__label">{{label}}</span>
+							</label>
+							<div class="label-count">{{count[index]}}</div>
+						</div>
+					{% else %}
+						<div class="group-list__item">
+							<label for="{{index}}" class="custom-checkbox">
+								<input id="{{index}}" type="checkbox">
+								<span class="custom-checkbox__input"></span>
+								<span class="custom-checkbox__label">{{label}}</span>
+							</label>
+							<div class="label-count">{{count[index]}}</div>
+						</div>
+					{% endif %}
+
+				{% endfor %}
+
+			</div>
+		</fieldset>
+
+		{% for index, item in types %}
+			<fieldset>
+				<div class="group-title js__group-title-toggle">{{item}}</div>
+				<div class="group-list">
+					{% for index, label in brands %}
+						{% if index == 1 %}
+							<div class="group-list__item">
+								<label for="{{index}}-{{item}}" class="custom-checkbox">
+									<input id="{{index}}-{{item}}" type="checkbox" checked>
+									<span class="custom-checkbox__input"></span>
+									<span class="custom-checkbox__label">{{label}}</span>
+								</label>
+								<div class="label-count">{{count[index]}}</div>
+							</div>
+						{% elseif index == 2 %}
+							<div class="group-list__item">
+								<label for="{{index}}-{{item}}" class="custom-checkbox">
+									<input id="{{index}}-{{item}}" type="checkbox" disabled>
+									<span class="custom-checkbox__input"></span>
+									<span class="custom-checkbox__label">{{label}}</span>
+								</label>
+								<div class="label-count">{{count[index]}}</div>
+							</div>
+						{% else %}
+							<div class="group-list__item">
+								<label for="{{index}}-{{item}}" class="custom-checkbox">
+									<input id="{{index}}-{{item}}" type="checkbox">
+									<span class="custom-checkbox__input"></span>
+									<span class="custom-checkbox__label">{{label}}</span>
+								</label>
+								<div class="label-count">{{count[index]}}</div>
+							</div>
+						{% endif %}
+
+					{% endfor %}
+
+				</div>
+			</fieldset>
+		{% endfor %}
+
+		<div class="buttons">
+			<button class="btn" type="submit">Применить</button>
+			<button class="btn btn--white" type="reset">Сбросить</button>
+		</div>
+	</form>
+</div>

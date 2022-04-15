@@ -27,20 +27,20 @@
 
 			<div class="catalog">
 				<div class="uk-grid">
-					<div class="uk-width-1-5@m">
+					<div class="uk-width-auto@l">
 						<div class="left-sidebar">
-							<div class="filter-btn js__toggle-sidebar uk-hidden@m">
+							<div class="filter-btn js__toggle-sidebar uk-hidden@l">
 								Открыть фильтр
 								<i class="filter-btn__icon">
 									<img src="img/icon-svg/drop-down.svg" width="12" height="6" alt="">
 								</i>
 							</div>
 							<div class="left-sidebar__inner">
-								<div class="filter-menu"></div>
+								{% include "../includes/components/filter.twig" %}
 							</div>
 						</div>
 					</div>
-					<div class="uk-width-4-5@m">
+					<div class="uk-width-expand@l">
 						<div class="catalog__header">
 							<div class="stock-card">
 								<div class="stock-card__inner">

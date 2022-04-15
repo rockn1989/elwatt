@@ -123,3 +123,63 @@
 .uk-sticky-placeholder {
   display: none;
 }
+
+
+.main-subnav {
+  @include list-reset();
+  position: relative;
+  padding-right: $gutter;
+  width: 326px;
+  height: 100%;
+  border-right: 1px solid $border;
+
+  &>li {
+    position: relative;
+    margin-bottom: 16px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    a {
+      position: relative;
+      display: block;
+      padding-right: 20px;
+
+      svg {
+        position: absolute;
+        top: 8px;
+        right: 0;
+      }
+    }
+  }
+
+
+}
+
+
+.main-nav {
+  .subnav {
+    @include list-reset();
+    display: none;
+
+    &.visible {
+      display: block;
+    }
+  }
+}
+
+.special-offer {
+  padding: $gutter / 2;
+  border: 1px solid $border;
+
+  @media (min-width: $desk-lg) {
+    padding: $gutter;
+  }
+
+  .title-h3 {
+    margin-bottom: $gutter;
+    padding-right: 136px;
+    word-break: break-word;
+  }
+}

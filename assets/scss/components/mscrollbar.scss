@@ -1,0 +1,23 @@
+.mCSB_scrollTools .mCSB_dragger {
+  height: 61px !important;
+
+  &.mCSB_dragger_onDrag {
+    .mCSB_dragger_bar {
+      background-color: $prime;
+    }
+  }
+
+  .mCSB_dragger_bar {
+    background-color: $prime;
+
+    &:hover {
+      background-color: $prime;
+    }
+  }
+
+  &:hover {
+    .mCSB_dragger_bar {
+      background-color: $prime;
+    }
+  }
+}

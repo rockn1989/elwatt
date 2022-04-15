@@ -1,0 +1,74 @@
+.ui-slider-box {
+  .input-section {
+    position: relative;
+
+    input[type="number"] {
+      padding: 13px 16px 0;
+      width: 107px;
+      height: 48px;
+      font-size: 16px;
+      background-color: $bg;
+      border: none;
+      border-radius: $borderRadius;
+    }
+
+    .small-gray-title {
+      position: absolute;
+      top: 8px;
+      left: 15px;
+      font-size: 12px;
+      line-height: 12px;
+    }
+  }
+
+  .input-box {
+    margin-bottom: $gutter / 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .separate {
+    margin: 0 10px;
+    flex-shrink: 0;
+    width: 16px;
+    height: 1px;
+    background: $gray;
+  }
+}
+
+
+#ui-slider {
+  margin: 0 auto;
+  width: 245px;
+  height: 2px;
+  border: none;
+  background-color: $red;
+
+  .ui-slider-handle {
+    top: -10px;
+    width: 24px;
+    height: 24px;
+    background-color: $prime;
+    border-radius: 8px;
+    border: none;
+    color: $white;
+    cursor: pointer;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: block;
+      width: 2px;
+      height: 8px;
+      background-color: $white;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .ui-slider-range {
+    background-color: $bg;
+  }
+}
