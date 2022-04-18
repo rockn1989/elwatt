@@ -49,3 +49,12 @@
     border-bottom: 1px solid $border;
   }
 }
+
+
+.catalog-complect {
+  margin-bottom: $gutter * 1.5;
+
+  @media (min-width: $tablet-w) {
+    margin-bottom: $gutter * 3;
+  }
+}
