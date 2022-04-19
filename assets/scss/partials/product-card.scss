@@ -34,32 +34,6 @@
     }
   }
 
-  &__stocks {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-
-    &>div {
-      margin-right: 4px;
-      padding: 5px 4px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: $white;
-      border-radius: 4px;
-      line-height: 16px;
-    }
-
-    .stock__hit {
-      background-color: $red;
-    }
-
-    .stock__new {
-      background-color: $green;
-    }
-  }
-
   &__toolbar {
     position: absolute;
     top: 0;
@@ -175,4 +149,31 @@
   height: 22px;
   background: url('../img/icon-svg/comparison.svg') center no-repeat;
   background-size: 14px;
+}
+
+
+.stocks {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+
+  &>div {
+    margin-right: 4px;
+    padding: 5px 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $white;
+    border-radius: 4px;
+    line-height: 16px;
+  }
+
+  &__hit {
+    background-color: $red;
+  }
+
+  &__new {
+    background-color: $green;
+  }
 }

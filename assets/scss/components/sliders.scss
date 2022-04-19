@@ -429,6 +429,10 @@
   @media (min-width: $tablet-w) {
     margin-bottom: $gutter * 1.5;
   }
+
+  .product-card {
+    padding: $gutter / 2;
+  }
 }
 
 
@@ -499,5 +503,101 @@
     svg {
       margin: 0;
     }
+  }
+}
+
+
+.detail-slider-wrapper {
+  position: relative;
+
+  @media (min-width: $tablet-w) {
+    max-width: 543px;
+  }
+}
+
+
+.detail-slider {
+  .slider {
+    position: relative;
+    margin-bottom: $gutter / 2;
+    height: 526px;
+    overflow: hidden;
+    padding-bottom: $gutter / 2;
+    border-bottom: 1px solid $border;
+
+    &.slick-initialized {
+      height: auto;
+      overflow: visible;
+    }
+
+    @media (min-width: $tablet-w) {
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+
+    @media (min-width: $desk-w) {
+      margin-bottom: 0;
+    }
+  }
+
+  .slide {
+    a {
+      position: relative;
+      padding-bottom: 48px;
+      display: block;
+      z-index: 30;
+    }
+
+    img {
+      margin: 0 auto;
+    }
+  }
+
+  .slick-prev,
+  .slick-next {
+    top: auto;
+    bottom: 0;
+    transform: none;
+  }
+
+  .slick-prev {
+    left: 0;
+  }
+
+  .slick-next {
+    right: auto;
+    left: 60px;
+  }
+
+  .slick-dots {
+    bottom: 30px;
+
+    @media (min-width: $tablet-w) {
+      bottom: 13px;
+      left: 50%;
+      transform: translateX(-50%);
+      justify-content: center;
+    }
+  }
+
+  .zoom {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
+
+
+.zoom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: $bg;
+
+  svg {
+    color: $prime;
   }
 }

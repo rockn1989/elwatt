@@ -1,0 +1,146 @@
+.detail-top-bar {
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  @media (min-width: $tablet-w) {
+    margin-bottom: $gutter / 2;
+  }
+
+  &>div {
+    margin-right: $gutter;
+    margin-bottom: $gutter / 2;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+
+.product-favorite {
+
+  &>a {
+    padding: 2px 0 2px 30px;
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    white-space: nowrap;
+
+    &.add {
+      background-image: url('../img/icon-svg/star.svg');
+      background-size: 20px;
+    }
+
+    &.added {
+      background-image: url('../img/icon-svg/star-fill.svg');
+      background-size: 28px;
+    }
+  }
+}
+
+.product-comparison {
+  &>a {
+    padding: 2px 0 2px 30px;
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    background-image: url('../img/icon-svg/comparison.svg');
+    background-size: 14px;
+    white-space: nowrap;
+  }
+}
+
+
+.product-reviews {
+  &__text {
+    padding: 2px 0 2px 110px;
+    background: url('../img/star-group.png') 0 center no-repeat;
+    background-size: 100px 24px;
+    white-space: nowrap;
+  }
+}
+
+
+.exists-product {
+  position: relative;
+  margin-bottom: $gutter / 2;
+  padding-left: 22px;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: 0;
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: $green;
+  }
+
+  &--warning {
+    &:before {
+      background-color: $red;
+    }
+  }
+}
+
+.detail-card {
+  margin-bottom: $gutter * 1.5;
+  padding: $gutter 0 $gutter * 1.5;
+  border-top: 1px solid $border;
+  border-bottom: 1px solid $border;
+
+  @media (min-width: $tablet-w) {
+    margin-bottom: $gutter * 2;
+  }
+
+  &__options-list {
+    margin-bottom: $gutter / 2;
+  }
+
+  &__option {
+    margin-bottom: $gutter / 2;
+  }
+
+  &__option-title {
+    color: $gray;
+  }
+}
+
+
+.detail-card-order {
+  @media (min-width: $desk-w) {
+    padding-left: $gutter;
+    border-left: 1px solid $border;
+  }
+
+  &__price {
+    margin-bottom: $gutter / 4;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    .old-price {
+      margin-right: 10px;
+      font-size: 24px;
+      line-height: 36px;
+    }
+
+    .current-price {
+      font-size: 36px;
+      line-height: 54px;
+    }
+  }
+
+  &__controls {
+    margin-bottom: $gutter;
+    display: flex;
+
+    .btn {
+      margin-left: 12px;
+      flex-grow: 2;
+      max-width: 320px;
+    }
+  }
+}

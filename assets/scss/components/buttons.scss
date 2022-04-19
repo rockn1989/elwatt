@@ -9,6 +9,7 @@
   border: 1px solid $prime;
   transition: background-color .3s, color .3s, border-color .3s ease;
   cursor: pointer;
+  white-space: nowrap;
 
   &:hover,
   &:active {
@@ -41,7 +42,7 @@
 
   &--icon {
     display: inline-flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 13px 23px 13px 23px;
 
