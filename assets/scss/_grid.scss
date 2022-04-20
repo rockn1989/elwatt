@@ -14,3 +14,12 @@
   max-width: $containerWidth;
   box-sizing: border-box;
 }
+
+
+.default-section {
+  margin-bottom: $gutter * 1.5;
+
+  @media (min-width: $tablet-w) {
+    margin-bottom: $gutter * 2;
+  }
+}

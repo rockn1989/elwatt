@@ -1,0 +1,75 @@
+.default-modal {
+  padding: 0;
+
+  .uk-modal-dialog {
+    margin: 0 0 0 auto;
+    padding: $gutter 0;
+    min-height: 100%;
+    transform: translateY(0) translateX(0);
+  }
+
+  .container {
+    @media (min-width: $tablet-w) {
+      padding: 0 $gutter;
+    }
+  }
+
+  .uk-modal-header {
+    margin-bottom: $gutter;
+    padding: 0 0 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $border;
+
+    .title-h2 {
+      margin-bottom: 0;
+    }
+  }
+
+  .uk-modal-body {
+    padding: 0;
+  }
+
+  .uk-modal-close {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid $border;
+    transition: background-color .3s ease;
+
+    @media (min-width: $tablet-w) {
+      width: 96px;
+      height: 96px;
+    }
+
+    svg {
+      fill: $gray;
+    }
+
+    &:hover {
+      border-color: $bg;
+      background-color: $bg;
+    }
+  }
+
+  &.review-modal {
+    .uk-modal-dialog {
+      width: 860px;
+    }
+  }
+
+  .politics {
+    margin-top: $gutter / 2;
+    color: $gray;
+
+    a {
+      color: $prime;
+      text-decoration: underline;
+    }
+  }
+
+}

@@ -215,3 +215,121 @@ form {
     }
   }
 }
+
+
+.rating {
+  position: relative;
+  margin-right: $gutter / 2;
+  width: 160px;
+  height: 34px;
+  flex-shrink: 0;
+
+  .icon-star {
+    position: static;
+    margin-left: 5px;
+    float: right;
+    width: 28px;
+    height: 28px;
+    background-repeat: no-repeat;
+    background-size: 34px;
+    background-position: center;
+    background-image: url('../img/icon-svg/star-fill-gray.svg');
+    cursor: pointer;
+
+    &:last-child {
+      margin-left: 0;
+    }
+  }
+
+  input[type="radio"] {
+    position: absolute;
+    margin: 0;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    line-height: 0;
+
+    &:checked {
+      ~label {
+        background-image: url('../img/icon-svg/star-fill.svg');
+      }
+    }
+  }
+
+
+}
+
+
+.default-form {
+  .form-group {
+    position: relative;
+    margin-bottom: $gutter / 2;
+    display: flex;
+    align-items: center;
+  }
+
+  input[type="text"],
+  input[type="password"],
+  input[type="tel"],
+  input[type="email"] {
+    padding: 13px 16px;
+    background-color: $bg;
+    border-radius: $borderRadius;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+    color: $black;
+    border: 1px solid transparent;
+
+    &.error {
+      border-color: $red;
+    }
+
+    &.focus {
+      padding: 18px 16px 8px;
+    }
+  }
+
+  textarea {
+    padding: 13px 16px;
+    background-color: $bg;
+    border-radius: $borderRadius;
+    border: none;
+    outline: none;
+    width: 100%;
+    min-height: 96px;
+    font-size: 16px;
+    line-height: 24px;
+    color: $black;
+    resize: vertical;
+
+    &.focus {
+      padding: 18px 16px 8px;
+    }
+  }
+
+  label {
+    position: absolute;
+    top: 12px;
+    left: 16px;
+    color: $gray;
+    transition: font-size .3s, top .3s ease;
+
+    &.focus {
+      font-size: 12px;
+      line-height: 12px;
+      top: 8 px;
+    }
+  }
+
+  ::placeholder {
+    color: $gray;
+  }
+
+
+  .form-buttons {
+    margin-top: $gutter;
+  }
+}

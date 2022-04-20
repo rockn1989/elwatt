@@ -39,6 +39,7 @@ h1,
 .title-h1 {
   margin-bottom: $gutter/2;
   @include adpFont(32, 32, 48, 48, 320, 1440);
+  word-break: break-word;
 
   &.underline {
     padding-bottom: $gutter/2;
@@ -178,4 +179,9 @@ a {
 
 .text-red {
   color: $red;
+}
+
+
+.small-title {
+  color: $gray;
 }

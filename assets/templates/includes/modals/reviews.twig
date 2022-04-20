@@ -1,0 +1,51 @@
+{% extends "./default-modal" %}
+
+{% extends "./default-modal.twig" %}
+{% set modal = {id: 'review-modal', class: 'review-modal', title: 'Оставить отзыв'} %}
+
+{% block content %}
+
+	<form action="" class="default-form">
+		<div class="form-group uk-margin-medium-bottom">
+			<div class="rating uk-clearfix">
+				<input id="rating-5" type="radio" name="review-rating" value="5">
+				<label for="rating-5" class="icon-star"></label>
+				<input id="rating-4" type="radio" name="review-rating" value="4">
+				<label for="rating-4" class="icon-star"></label>
+				<input id="rating-3" type="radio" name="review-rating" value="3">
+				<label for="rating-3" class="icon-star"></label>
+				<input id="rating-2" type="radio" name="review-rating" value="2">
+				<label for="rating-2" class="icon-star"></label>
+				<input id="rating-1" type="radio" name="review-rating" value="1">
+				<label for="rating-1" class="icon-star"></label>
+			</div>
+			<div class="rating__label">Ваша оценка</div>
+
+		</div>
+		<div class="form-group form-group--sm">
+			<label for="cb-name">Ваше имя</label>
+			<input id="cb-name" type="text">
+		</div>
+		<div class="form-group">
+			<label for="cb-positive">Достоинства</label>
+			<textarea name="cb-positive" id="cb-positive"></textarea>
+		</div>
+		<div class="form-group">
+			<label for="cb-negative">Недостатки</label>
+			<textarea name="cb-negative" id="cb-negative"></textarea>
+		</div>
+		<div class="form-group">
+			<label for="cb-comm">Комментарий</label>
+			<textarea name="cb-comm" id="cb-comm"></textarea>
+		</div>
+
+		<div class="form-buttons">
+			<button type="submit" class="btn">Оставить отзыв</button>
+		</div>
+	</form>
+
+	<div class="politics">
+		Нажимая на кнопку Оставить отзыв, я даю согласие на обработку
+		<a href="/politics/">Персональных данных</a>
+	</div>
+{% endblock %}

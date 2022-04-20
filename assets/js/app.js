@@ -96,6 +96,39 @@ $(function () {
   $('.js__toggle-sidebar').on('click', function (e) {
     e.preventDefault();
     $('.left-sidebar__inner').stop(true, true).slideToggle('350')
-  })
+  });
+
+
+  /**
+   * Forms focus input
+   */
+
+  $(".default-form input, .default-form textarea").on("focus", function (e) {
+    e.preventDefault();
+    $(this).siblings('label:not([class="error"]').addClass('focus');
+    $(this).addClass('focus');
+  });
+
+ $('.default-form input, .default-form textarea').on('blur', function() {
+    if($(this).val().length <= 1) {
+      $(this).siblings('label').removeClass('focus');
+      $(this).removeClass('focus');
+    }
+  });
+
+  /**
+   * Custom select
+   */
+
+  $.each($(".js__select2"), function (i, el) {
+    $(el).select2({
+      placeholder: $(el).data("placeholder"),
+      theme: $(el).data("theme"),
+      width: $(el).data("width"),
+      allowClear: true,
+      minimumResultsForSearch: -1,
+      dropdownPosition: "below",
+    });
+  });
 
 });

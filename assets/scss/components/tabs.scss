@@ -1,0 +1,53 @@
+.tabs {
+  @include list-reset();
+  padding-bottom: $gutter / 2;
+  display: flex;
+  overflow-x: auto;
+  border-bottom: 1px solid $border;
+
+  li {
+    margin-right: $gutter / 2;
+
+    @media (min-width: $tablet-w) {
+      margin-right: $gutter;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    a {
+
+      display: block;
+      white-space: nowrap;
+      text-transform: uppercase;
+      font-family: $secondFont;
+      font-weight: 800;
+      font-size: 24px;
+      line-height: 30px;
+      color: $gray;
+
+      @media (min-width: $tablet-w) {
+        font-size: 32px;
+        line-height: 32px;
+      }
+    }
+
+    &.uk-active {
+      a {
+        color: $prime;
+      }
+    }
+  }
+}
+
+
+ul.uk-switcher {
+  padding: $gutter / 2 0;
+  margin-bottom: $gutter;
+
+  @media (min-width: $tablet-w) {
+    padding: $gutter 0;
+    margin-bottom: $gutter * 1.5;
+  }
+}

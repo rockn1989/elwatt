@@ -30,6 +30,18 @@
     }
   }
 
+  &--transparent {
+    color: $prime;
+    background-color: transparent;
+
+    &:hover,
+    &:active {
+      color: $white;
+      background-color: $prime;
+      border-color: $prime;
+    }
+  }
+
   &--red {
     background-color: $red;
     border-color: $red;

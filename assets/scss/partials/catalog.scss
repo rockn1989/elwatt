@@ -25,22 +25,11 @@
 
   &__footer {
     margin-bottom: $gutter / 1.5;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-
-    @media (min-width: $mob-s) {
-      justify-content: space-between;
-    }
 
     @media (min-width: $tablet-w) {
       margin-bottom: $gutter * 3;
     }
 
-    .load-more {
-      margin-right: 20px;
-    }
   }
 
   .product-card {
