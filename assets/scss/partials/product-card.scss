@@ -144,7 +144,8 @@
 
   &.active {
     background: url('../img/icon-svg/star-fill.svg') center no-repeat;
-    background-size: 22px;
+    background-size: 28px;
+    background-position: center -3px;
   }
 }
 
@@ -156,6 +157,13 @@
   background-size: 14px;
 }
 
+.delete-item {
+  display: block;
+  width: 22px;
+  height: 22px;
+  background: url('../img/icon-svg/cross-prime.svg') center no-repeat;
+  background-size: 14px;
+}
 
 .stocks {
   position: absolute;

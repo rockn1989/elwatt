@@ -131,4 +131,25 @@ $(function () {
     });
   });
 
+	/*______ Catalog Scrollbar ______*/
+
+	if($('.comparison-list__inner').length) {
+		$('.comparison-list__inner').mCustomScrollbar({
+			axis: "x",
+			theme: "siteTheme",
+			scrollInertia: 300,
+      advanced:{ 
+        autoExpandHorizontalScroll:true,
+        updateOnContentResize: true 
+      }
+		});
+	}
+
+
+  $('.delete-item').on('click', function (e) {
+    e.preventDefault();
+    $(this).parents('.comparison-list__item').remove();
+  });
+
+
 });

@@ -147,7 +147,7 @@ form {
 }
 
 
-.custom-radio {
+.radio-img {
   position: relative;
   width: 94px;
   height: 94px;
@@ -164,7 +164,7 @@ form {
     opacity: 0;
 
     &:checked {
-      ~.custom-radio__input {
+      ~.radio-img__input {
 
         &:before,
         &:after {
@@ -215,6 +215,73 @@ form {
     }
   }
 }
+
+
+.buttons-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  &>* {
+    margin-right: $gutter;
+    margin-bottom: $gutter / 4;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.custom-radio {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  input[type="radio"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 1px;
+    visibility: hidden;
+    opacity: 0;
+
+    &:checked {
+      ~.custom-radio__input {
+        &:after {
+          display: block;
+        }
+      }
+    }
+  }
+
+  &__input {
+    position: relative;
+    margin-right: 12px;
+    display: block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: $bg;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      display: block;
+      width: 12px;
+      height: 12px;
+      transform: translate(-50%, -50%) rotate(45deg);
+      display: none;
+      background: $prime;
+      border-radius: 50%;
+      z-index: 25;
+    }
+  }
+}
+
 
 
 .rating {

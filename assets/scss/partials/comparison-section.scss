@@ -1,0 +1,73 @@
+.border-panel {
+  padding-bottom: $gutter / 2;
+  border-bottom: 1px solid $border;
+
+  @media (min-width: $tablet-w) {
+    padding-bottom: $gutter - 10px;
+    margin-bottom: $gutter / 2;
+  }
+}
+
+
+.comparison-list {
+  width: 100%;
+
+  &__inner {
+    padding-bottom: $gutter;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  &__item {
+    display: inline-block;
+    vertical-align: top;
+    width: 270px;
+
+    @media (min-width: $mob-s) {
+      width: 340px;
+    }
+  }
+
+  .product-card {
+    margin-bottom: $gutter;
+    white-space: normal;
+
+    .btn.btn--red {
+      font-size: 0;
+
+      svg {
+        margin-right: 0;
+      }
+
+      @media (min-width: $mob-s) {
+        font-size: 16px;
+
+        svg {
+          margin-right: 16px;
+        }
+      }
+    }
+  }
+}
+
+
+.table-comparison {
+  width: 100%;
+  border-collapse: collapse;
+
+  tr {
+    td {
+      position: relative;
+      padding: 54px 0 10px;
+      white-space: normal;
+      border-bottom: 1px solid $border;
+
+      .td-title {
+        position: absolute;
+        top: 20px;
+        left: 0;
+        color: $gray;
+      }
+    }
+  }
+}
