@@ -1,0 +1,24 @@
+{% set menu = [
+    'О компании',
+    'Реквизиты',
+    'Оплата и доставка',
+    'Партнерам',
+    'Отзывы',
+    'Новости',
+    'Статьи'
+  ] %}
+
+<ul class="aside-list-nav">
+	{% for item in menu %}
+		{% if item == active %}
+			<li>
+				<a href="#" class="active">{{item}}</a>
+			</li>
+		{% else %}
+
+			<li>
+				<a href="#">{{item}}</a>
+			</li>
+		{% endif %}
+	{% endfor %}
+</ul>

@@ -1,0 +1,147 @@
+{% extends "../layouts/left-c-page.twig" %}
+{% set title="Новости" %}
+{% set bread = ['Главная', 'Новости'] %}
+
+{% block leftside %}
+	{% include "../includes/partials/left-sidebar-menu.twig" with {'active': 'Новости'} %}
+{% endblock %}
+{% block content %}
+	<!-- begin news-section -->
+	<section class="news-section">
+		<div class="uk-container">
+			<time class="top-date" datetime="24—26 марта 2022">24—26 марта 2022</time>
+			<h1 class="underline">Новое поступление
+				<br>
+				— Schneider Electric Unica New</h1>
+
+			<!-- begin detail-news -->
+			<div class="detail-news">
+				<article class="post-detail">
+					<div class="uk-grid">
+						<div class="uk-width-2-3@s">
+							<p>
+								Теперь на нашем сайте появились в продаже механизмы и рамки Schneider Electric Unica New. Это производитель, качество продуктов которого не вызывает абсолютно никаких сомнений. При этом все представленные изделия, как несложно заметить, обладают ещё и весьма привлекательным внешним видом. Теперь больше не придётся довольствоваться скучными розетками, выключателями и механизмами! Можно смело забыть о них, поскольку на смену таким простым изделиям пришли современные и интересные по дизайну продукты!
+							</p>
+						</div>
+						<div class="uk-width-1-3@s">
+							<img src="img/media/news/post-img-310x193-2.png" alt="" loading="lazy">
+						</div>
+						<div class="uk-width-2-3@s">
+							<div class="title-h2">ВЫгодно именно сейчас</div>
+							<p>При этом стоимость предложений Schneider Electric Unica New похожа на их дизайн: она только обрадует потребителя. А значит, нет больше причин отказывать себе не только в качественных, но при этом и в красивых изделиях. Достаточно просто заказать их на нашем сайте и украсить интерьер дома, офиса или любого другого пространства долговечными, симпатичными и надёжными электроустройствами. При этом отдельно радует то, что каждый сможет подобрать именно те варианты, которые максимально соответствуют его требованиям и желаниям!</p>
+						</div>
+					</div>
+				</article>
+
+				<div class="detail-news__nav">
+					<a href="" class="btn btn--icon btn--white">
+						<svg width="14px" height="12px" class="icon-arrow-left">
+							<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-svg/sprite/sprite.svg#arrow-left-tr"></use>
+						</svg>
+						К новостям</a>
+
+					{% include "../includes/partials/subscribe-list.twig" %}
+				</div>
+			</div>
+			<!-- end detail-news -->
+
+
+			<section class="default-section">
+				<div class="title-h2 underline">Другие новости</div>
+
+				<div class="news-slider">
+					<div class="slider">
+						<div class="slide">
+							<article class="post">
+								<header class="post__header">
+									<time class="post__date" datetime="24—26 марта 2022">24—26 марта 2022</time>
+									<picture class="post__img">
+										<source srcset="img/media/webp/post-img-310x193-1.webp" type="image/webp">
+										<source srcset="img/media/news/post-img-310x193-1.png" type="image/png">
+										<img src="img/media/news/post-img-310x193-1.png" alt="" loading="lazy">
+									</picture>
+								</header>
+								<section class="post__content">
+									<div class="post__content-inner">
+										<div class="post__title title-h3">
+											<a href="">Новое поступление</a>
+										</div>
+										<div class="post__text">Автоматические выключатели Schneider Electric серии RESI9</div>
+									</div>
+									<a href="">Узнать больше</a>
+								</section>
+							</article>
+						</div>
+						<div class="slide">
+							<article class="post">
+								<header class="post__header">
+									<time class="post__date" datetime="18 декабря 2021">18 декабря 2021</time>
+									<picture class="post__img">
+										<source srcset="img/media/webp/post-img-310x193-2.webp" type="image/webp">
+										<source srcset="img/media/news/post-img-310x193-2.png" type="image/png">
+										<img src="img/media/news/post-img-310x193-2.png" alt="" loading="lazy">
+									</picture>
+								</header>
+								<section class="post__content">
+									<div class="post__content-inner">
+										<div class="post__title title-h3">
+											<a href="">Новое поступление</a>
+										</div>
+										<div class="post__text">УЗО Выключатели дифференциального тока Schneider Electric серии RESI9</div>
+									</div>
+									<a href="">Узнать больше</a>
+								</section>
+							</article>
+						</div>
+
+						<div class="slide">
+							<article class="post">
+								<header class="post__header">
+									<time class="post__date" datetime="12 октября 2021">12 октября 2021</time>
+									<picture class="post__img">
+										<source srcset="img/media/webp/post-img-310x193-3.webp" type="image/webp">
+										<source srcset="img/media/news/post-img-310x193-3.png" type="image/png">
+										<img src="img/media/news/post-img-310x193-3.png" alt="" loading="lazy">
+									</picture>
+								</header>
+								<section class="post__content">
+									<div class="post__content-inner">
+										<div class="post__title title-h3">
+											<a href="">Металлорукав РЗ-Ц-Х</a>
+										</div>
+										<div class="post__text">Металлорукав РЗ-Ц-Х является очередным пополнением широкого ассортиментного ряда нашего интернет-магазина</div>
+									</div>
+									<a href="">Узнать больше</a>
+								</section>
+							</article>
+						</div>
+
+						<div class="slide">
+							<article class="post">
+								<header class="post__header">
+									<time class="post__date" datetime="12—31 августа 2021">12—31 августа 2021</time>
+									<picture class="post__img">
+										<source srcset="img/media/webp/post-img-310x193-4.webp" type="image/webp">
+										<source srcset="img/media/news/post-img-310x193-4.png" type="image/png">
+										<img src="img/media/news/post-img-310x193-4.png" alt="" loading="lazy">
+									</picture>
+								</header>
+								<section class="post__content">
+									<div class="post__content-inner">
+										<div class="post__title title-h3">
+											<a href="">Скидки</a>
+										</div>
+										<div class="post__text">Автоматические выключатели Schneider Electric серии RESI9</div>
+									</div>
+									<a href="">Узнать больше</a>
+								</section>
+							</article>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</div>
+	</section>
+	<!-- end news-section -->
+{% endblock %}

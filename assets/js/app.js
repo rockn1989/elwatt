@@ -96,6 +96,7 @@ $(function () {
   $('.js__toggle-sidebar').on('click', function (e) {
     e.preventDefault();
     $('.left-sidebar__inner').stop(true, true).slideToggle('350')
+    $(this).toggleClass('open');
   });
 
 

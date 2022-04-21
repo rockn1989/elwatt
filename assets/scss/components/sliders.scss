@@ -653,3 +653,48 @@
     color: $prime;
   }
 }
+
+
+.news-slider {
+  .slider {
+    height: 437px;
+    overflow: hidden;
+
+    &.slick-initialized {
+      height: auto;
+      overflow: visible;
+    }
+  }
+
+  .slick-list {
+    margin: 0 -20px;
+  }
+
+  .slick-track {
+    display: flex;
+  }
+
+  .slide {
+    margin: 0 20px;
+    height: auto;
+  }
+
+  .slick-prev,
+  .slick-next {
+    top: -84px;
+    transform: none;
+
+    @media (min-width: $tablet-w) {
+      top: -124px;
+    }
+  }
+
+  .slick-prev {
+    left: auto;
+    right: 68px;
+  }
+
+  .slick-next {
+    right: 0;
+  }
+}

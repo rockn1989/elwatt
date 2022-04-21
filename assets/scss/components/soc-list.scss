@@ -1,6 +1,7 @@
 .soc-list {
   @include list-reset;
   display: flex;
+  flex-wrap: wrap;
 
   li {
     margin: 0 12px 12px 0;

@@ -16,6 +16,18 @@ h5,
   color: $prime;
   font-family: $secondFont;
   text-transform: uppercase;
+
+  &.underline {
+    margin-bottom: $gutter / 2;
+    padding-bottom: $gutter/2;
+    border-bottom: 1px solid $border;
+
+    @media (min-width: $tablet-w) {
+      margin-bottom: $gutter;
+      padding-bottom: $gutter;
+      border-bottom: 1px solid $border;
+    }
+  }
 }
 
 
@@ -41,20 +53,24 @@ h1,
   @include adpFont(32, 32, 48, 48, 320, 1440);
   word-break: break-word;
 
-  &.underline {
-    padding-bottom: $gutter/2;
-    border-bottom: 1px solid $border;
-  }
+
 
   @media (min-width: $tablet-w) {
     margin-bottom: $gutter;
-
-    &.underline {
-      padding-bottom: $gutter;
-      border-bottom: 1px solid $border;
-    }
   }
 
+}
+
+.underline {
+  margin-bottom: $gutter / 2;
+  padding-bottom: $gutter/2;
+  border-bottom: 1px solid $border;
+
+  @media (min-width: $tablet-w) {
+    margin-bottom: $gutter;
+    padding-bottom: $gutter;
+    border-bottom: 1px solid $border;
+  }
 }
 
 h2,
