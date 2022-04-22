@@ -23,3 +23,14 @@
     margin-bottom: $gutter * 2;
   }
 }
+
+
+.content-section {
+  hr {
+    margin: $gutter 0;
+
+    @media (min-width: $tablet-w) {
+      margin: $gutter * 2 0;
+    }
+  }
+}

@@ -61,6 +61,13 @@ h1,
 
 }
 
+*+.title-h1,
+*+.title-h2,
+*+.title-h3,
+*+.title-h4 {
+  margin-top: $gutter;
+}
+
 .underline {
   margin-bottom: $gutter / 2;
   padding-bottom: $gutter/2;
@@ -85,6 +92,14 @@ h3,
   @include adpFont(18, 22, 24, 30, 320, 1440);
 }
 
+.uk-margin-large-top {
+  margin-top: $gutter * 2 !important;
+}
+
+.uk-margin-large-bottom {
+  margin-bottom: $gutter * 2 !important;
+}
+
 p {
   margin-bottom: $gutter/2;
 }
@@ -102,6 +117,10 @@ ul:not([class]) {
     position: relative;
     margin-bottom: 12px;
     padding-left: 18px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
 
     &:before {
       content: '';
@@ -132,6 +151,9 @@ ol:not([class]) {
     margin-bottom: 12px;
     padding-left: 32px;
 
+    &:last-child {
+      margin-bottom: 0;
+    }
 
     &:before {
       counter-increment: item;
@@ -153,6 +175,35 @@ ol:not([class]) {
   }
 }
 
+ul.checked-list {
+  @include list-reset;
+  margin-bottom: $gutter/2;
+
+  @media (min-width: $tablet-w) {
+    margin-bottom: $gutter;
+  }
+
+  li {
+    position: relative;
+    margin-bottom: 12px;
+    padding-left: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 8px;
+      left: 0;
+      width: 12px;
+      height: 8px;
+      background: url('../img/icon-svg/check.svg') center no-repeat;
+      background-size: 100%;
+    }
+  }
+}
 
 blockquote {
   margin-bottom: $gutter / 2;
@@ -200,4 +251,31 @@ a {
 
 .small-title {
   color: $gray;
+}
+
+
+figure {
+  margin-bottom: $gutter;
+  text-align: center;
+
+  @media (min-width: $tablet-w) {
+    text-align: left;
+  }
+
+  figcaption {
+    margin-top: $gutter / 2;
+    text-align: center;
+
+    @media (min-width: $tablet-w) {
+      text-align: left;
+    }
+  }
+
+  &.prime-figure {
+    margin-bottom: $gutter;
+
+    @media (min-width: $tablet-w) {
+      margin-bottom: $gutter * 2;
+    }
+  }
 }

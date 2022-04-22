@@ -1,0 +1,60 @@
+{% extends "../layouts/left-c-page.twig" %}
+{% set title="Партнерам" %}
+{% set bread = ['Главная', 'Партнерам'] %}
+
+{% block leftside %}
+	{% include "../includes/partials/left-sidebar-menu.twig" with {'active': 'Партнерам'} %}
+{% endblock %}
+{% block content %}
+	<!-- begin content-section -->
+	<section class="content-section">
+		<div class="uk-container">
+			<h1>Партнерам</h1>
+			<figure class="prime-figure">
+				<picture>
+					<source srcset="img/media/webp/content-img-4.webp" type="image/webp">
+					<source srcset="img/media/content-img-4.png" type="image/png">
+					<img src="img/media/content-img-4.png" width="1010" height="384" alt="" loading="lazy">
+				</picture>
+			</figure>
+
+			<div class="uk-grid " uk-grid>
+				<div class="uk-width-1-2@m">
+					<div class="title-h2 uk-margin-medium-bottom">Розничные клиенты</div>
+					<a href="" class="btn btn--white">Оставить заявку</a>
+				</div>
+				<div class="uk-width-1-2@m">
+					<ul class="checked-list">
+						<li>Могут обратиться к нашим техническим специалистам за консультацией по товару или подбором аналогов</li>
+						<li>Могут отправить заявку на почту для просчета или подбора аналогов</li>
+						<li>Могут отправить заявку на почту для просчета или подбора аналогов</li>
+						<li>Прозрачная схема осуществления возвратов</li>
+					</ul>
+				</div>
+			</div>
+			<hr>
+			<div class="uk-grid " uk-grid>
+				<div class="uk-width-1-2@m">
+					<div class="title-h2 uk-margin-medium-bottom">Оптовые клиенты
+						<br>
+						юридические лица</div>
+					<a href="" class="btn btn--white">Оставить заявку</a>
+				</div>
+				<div class="uk-width-1-2@m">
+					<ul class="checked-list">
+						<li>Персональный менеджер</li>
+						<li>Оперативность обработки заявок</li>
+						<li>Кратчайшие сроки поставки продукции</li>
+						<li>Оплата по безналичному расчету</li>
+						<li>Полный пакет закрывающих документов</li>
+						<li>Предоставление сертификатов и отказных писем</li>
+						<li>Гибкая система скидок (индивидуальные условия для каждого клиента)</li>
+						<li>профессиональные, честные и взаимовыгодные деловые отношения</li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<!-- end content-section -->
+{% endblock %}

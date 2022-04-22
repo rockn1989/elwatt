@@ -1,0 +1,162 @@
+{% extends "../layouts/left-c-page.twig" %}
+{% set title="О компании" %}
+{% set bread = ['Главная', 'О компании'] %}
+
+{% block leftside %}
+	{% include "../includes/partials/left-sidebar-menu.twig" with {'active': 'О компании'} %}
+{% endblock %}
+{% block content %}
+	<!-- begin content-section -->
+	<section class="content-section">
+		<div class="uk-container">
+			<div class="uk-grid uk-grid-divider uk-child-width-1-2@s uk-margin-medium-bottom" uk-grid>
+				<div class="uk-width-1-2@s">
+					<h1>О компании</h1>
+				</div>
+				<div class="uk-width-1-2@s">
+					Интернет-магазин электрики El-watt предоставляет свои услуги оптовым и розничным покупателям с различной сферы деятельности. Наш клиент – это тот специалист, который ищет действительно качественную продукцию по выгодной цене.
+				</div>
+			</div>
+
+			<figure class="prime-figure">
+				<picture>
+					<source srcset="img/media/webp/content-img-1.webp" type="image/webp">
+					<source srcset="img/media/content-img-1.png" type="image/png">
+					<img src="img/media/content-img-1.png" width="1010" height="384" alt="" loading="lazy">
+				</picture>
+			</figure>
+
+			<p>
+				Наш сплоченный коллектив уже давно трудится на рынке электрических товаров и успел заслужить репутацию надежного и ответственного продавца, который уважает своих клиентов и ценит их время. Уникальность нашего магазина El-watt состоит в индивидуальном подходе ко всем клиентам вне зависимости от объема его заказа и продолжительности сотрудничества. Мы стремимся слышать и слушать каждого покупателя!
+			</p>
+
+			<p>Если вы не смогли найти определенный товар на страницах нашего интернет магазина электрики, мы готовы оформить заявку под заказ и найти наиболее выгодное для вас предложение. Наших постоянных оптовых клиентов мы всегда поощряем дополнительными скидками или услугами. При особо тесном сотрудничестве наш магазин может предоставить рассрочку на выплату суммы за партию товаров.</p>
+
+
+			<div class="title-h2 underline uk-margin-large-top">Преимущества интернет-магазина El-watt</div>
+			<div class="advantages-list uk-child-width-1-2@s" uk-grid>
+				<div class="advantages-list__col">
+					<div class="advantages-list__item">
+						<div class="advantages-item__header">
+							<div class="advantages-item__icon">
+								<img src="img/icon-svg/logistic.svg" width="42" height="60" alt="" loading="lazy">
+							</div>
+							<div class="advantages-item__title">Логистика</div>
+						</div>
+						<div class="advantages-item__text">
+							Для доставки заказов покупателям (Москва и МО) мы пользуемся сторонними ТК, пунктами самовывоза, а также собственной логистикой, что позволяет нам быть более гибкими и доставлять товар клиенту даже тогда, когда это кажется невозможным. Доставки осуществляются на следующий день после размещения и оплаты заказа, но когда это особенно важно — день в день.
+						</div>
+					</div>
+				</div>
+				<div class="advantages-list__col">
+					<div class="advantages-list__item">
+						<div class="advantages-item__header">
+							<div class="advantages-item__icon">
+								<img src="img/icon-svg/price.svg" width="35" height="60" alt="" loading="lazy">
+							</div>
+							<div class="advantages-item__title">Низкие цены</div>
+						</div>
+						<div class="advantages-item__text">
+							Наша компания работает на рынке электротехнической продукции уже более 15 лет, за это время нам удалось выстроить крепкие и доверительные отношения с крупнейшими производителями и дистрибьюторами рынка электротехники, это дает нам возможность предлагать нашим клиентам более низкие цены, предоставлять дополнительные скидки и бонусы.
+						</div>
+					</div>
+				</div>
+				<div class="advantages-list__col">
+					<div class="advantages-list__item">
+						<div class="advantages-item__header">
+							<div class="advantages-item__icon">
+								<img src="img/icon-svg/safe.svg" width="43" height="60" alt="" loading="lazy">
+							</div>
+							<div class="advantages-item__title">Мы против подделок</div>
+						</div>
+						<div class="advantages-item__text">
+							Мы являемся сертифицированными партнерами известных брендов (ABB, Schneider Electric, IEK, Legrand и др.) и продаем исключительно оригинальную продукцию
+						</div>
+					</div>
+				</div>
+				<div class="advantages-list__col">
+					<div class="advantages-list__item">
+						<div class="advantages-item__header">
+							<div class="advantages-item__icon">
+								<img src="img/icon-svg/experience.svg" width="64" height="38" alt="" loading="lazy">
+							</div>
+							<div class="advantages-item__title">Опыт</div>
+						</div>
+						<div class="advantages-item__text">
+							В нашей компании работают сотрудники с многолетним опытом и знанием продукции, в случае если потребуется техническая консультация
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="uk-grid uk-grid-divider" uk-grid>
+				<div class="uk-width-1-2@m">
+					<figure>
+						<source srcset="img/media/webp/content-img-2.webp" type="image/webp">
+						<source srcset="img/media/content-img-2.png" type="image/png">
+						<img src="img/media/content-img-2.png" width="467" height="313" alt="" loading="lazy">
+					</figure>
+					<p>
+						Наш интернет-магазин предлагает покупателям огромный ассортимент электрической продукции. У нас в интернет или стационарном магазине вы всегда сможете отыскать необходимый товар для строительства или обустройства предприятия, офиса или собственного дома.
+					</p>
+				</div>
+				<div class="uk-width-1-2@m">
+					<div class="title-h2 underline">
+						Для юридических лиц и оптовых покупателей предусмотрены особые условия:
+					</div>
+					<ul class="checked-list">
+						<li>Персональный менеджер</li>
+						<li>Оперативность обработки заявок</li>
+						<li>Кратчайшие сроки поставки продукции</li>
+						<li>Оплата по безналичному расчету</li>
+						<li>Полный пакет закрывающих документов</li>
+						<li>Предоставление сертификатов и отказных писем</li>
+						<li>Гибкая система скидок (индивидуальные условия для каждого клиента)</li>
+						<li>Профессиональные, честные и взаимовыгодные деловые отношения.</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="title-h2 underline uk-margin-large-top">
+				В нашем каталоге<br>
+				более 30 производителей
+			</div>
+
+			<p>Продукция, которую мы предлагаем своим клиентам, производится на предприятиях мировых лидеров на рынке электрики, например, Меркури, Шнейдер электрик, ABB, Devi, Legrand, Gauss и многие другие. Тесное сотрудничество с производителями напрямую без многочисленных посредников позволяет нашему интернет-магазину электрики удерживать цены на доступном уровне.
+			</p>
+			<div class="brands-pictures uk-margin-large-bottom">
+				<ul class="brands-pictures__list">
+					<li class="brands-pictures__list-item"><img src="img/media/webp/brand-img-1.webp" alt="" loading="lazy"></li>
+					<li class="brands-pictures__list-item"><img src="img/media/webp/brand-img-2.webp" alt="" loading="lazy"></li>
+					<li class="brands-pictures__list-item"><img src="img/media/webp/brand-img-3.webp" alt="" loading="lazy"></li>
+					<li class="brands-pictures__list-item"><img src="img/media/webp/brand-img-4.webp" alt="" loading="lazy"></li>
+					<li class="brands-pictures__list-item"><img src="img/media/webp/brand-img-5.webp" alt="" loading="lazy"></li>
+					<li class="brands-pictures__list-item"><img src="img/media/webp/brand-img-6.webp" alt="" loading="lazy"></li>
+					<li class="brands-pictures__list-item"><img src="img/media/webp/brand-img-7.webp" alt="" loading="lazy"></li>
+					<li class="brands-pictures__list-item"><img src="img/media/webp/brand-img-8.webp" alt="" loading="lazy"></li>
+					<li class="brands-pictures__list-item"><img src="img/media/webp/brand-img-9.webp" alt="" loading="lazy"></li>
+					<li class="brands-pictures__list-item"><img src="img/media/webp/brand-img-10.webp" alt="" loading="lazy"></li>
+					<li class="brands-pictures__list-item"><img src="img/media/webp/brand-img-11.webp" alt="" loading="lazy"></li>
+					<li class="brands-pictures__list-item"><img src="img/media/webp/brand-img-12.webp" alt="" loading="lazy"></li>
+				</ul>
+				<a href="" class="uk-visible@m">Все производители</a>
+			</div>
+
+			<div class="seo-block">
+				<div class="uk-grid">
+					<div class="uk-width-1-2@m">
+						<div class="seo-block__title">
+							<div class="title-h2">Любые возникающие вопросы наших клиентов моментально решаются профессиональной консультацией сотрудников</div>
+						</div>
+					</div>
+					<div class="uk-width-1-2@m">
+						<div class="seo-block__text">
+							<p>Каждый из покупателей для нас бесценен, а потому мы очень дорожим вашим доверием и предлагаем все лучшее, что только можно найти на рынке электрических товаров.Развивайте свой бизнес с нашим интернет-магазином и вас обязательно ждет успех!</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end content-section -->
+{% endblock %}

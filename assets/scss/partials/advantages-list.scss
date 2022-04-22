@@ -1,8 +1,10 @@
 .advantages-list {
   margin-top: $gutter / 2;
+  margin-bottom: $gutter;
 
   @media (min-width: $tablet-w) {
     margin-top: 0;
+    margin-bottom: $gutter * 2;
   }
 
   &__item {

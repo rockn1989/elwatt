@@ -1,9 +1,15 @@
 .reviews-section {
-  margin-top: $gutter;
+  margin-top: $gutter / 2;
 
   @media (min-width: $tablet-w) {
     margin-top: 0;
   }
+}
+
+.reviews-list {
+  margin-bottom: $gutter;
+  padding-bottom: $gutter / 2;
+  border-bottom: 1px solid $border;
 }
 
 .review {
@@ -13,6 +19,8 @@
 
   &:last-child {
     margin-bottom: $gutter / 2;
+    padding-bottom: 0;
+    border-bottom: none;
   }
 
   &__top {
@@ -82,9 +90,25 @@
   &__text-negative {
     margin-bottom: $gutter / 2;
   }
+
+  .doc-list {
+    margin-top: $gutter / 2;
+    width: 100%;
+
+    @media (min-width: $mob-s) {
+      margin-top: 0;
+      margin-left: auto;
+      width: auto;
+    }
+
+    li {
+      margin: 0;
+    }
+  }
 }
 
 .add-reviews {
+  margin-bottom: $gutter / 2 !important;
   padding: $gutter / 2;
   background: $bg;
 

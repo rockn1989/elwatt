@@ -11,6 +11,7 @@
     @include list-reset();
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 
     li {
       margin-right: $gutter / 2;

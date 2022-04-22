@@ -1,0 +1,72 @@
+{% extends "../layouts/left-c-page.twig" %}
+{% set title="Новости" %}
+{% set bread = ['Главная', 'Отзыв №23'] %}
+
+{% block leftside %}
+	{% include "../includes/partials/left-sidebar-menu.twig" with {'active': 'Отзывы'} %}
+{% endblock %}
+{% block content %}
+	<!-- begin content-section -->
+	<section class="content-section">
+		<div class="uk-container">
+			<h1 class="underline">Отзыв №23</h1>
+
+			<div class="reviews-wrapper">
+				<div class="uk-grid">
+					<div class="uk-width-1-1 uk-hidden@m">
+						<div class="add-reviews">
+							<div class="add-reviews__text">
+								Оставьте свой отзыв о нашей компании и получите скидку
+							</div>
+							<a href="#review-modal" class="btn btn--transparent" uk-toggle>Оставить отзыв</a>
+						</div>
+					</div>
+					<div class="uk-width-3-4@m">
+						<div class="reviews-list">
+							<article class="review">
+								<header class="review__top">
+									<div class="review__rating review__rating--three"></div>
+									<div class="review__author">Светлана Олеговна</div>
+									<time class="review__date" datetime="21.02.2022">21.02.2022</time>
+									<ul class="doc-list">
+										<li class="doc-list__item">
+											<div class="doc-list__icon">
+												<svg width="32px" height="40px" class="icon-doc">
+													<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-svg/sprite/sprite.svg#doc"></use>
+												</svg>
+											</div>
+											<div class="doc-list__title">
+												<a href="">Благодарность</a>
+											</div>
+										</li>
+									</ul>
+								</header>
+								<section class="review__text">
+									<div class="review__text-positive">
+										<div class="small-title">Достоинства</div>
+										Выстроенные  отношения с крупнейшими производителями и дистрибьюторами рынка электротехники, дают нам возможность предлагать  вам более низкие цены, предоставлять дополнительные скидки и бонусы.
+									</div>
+									<div class="review__text-negative">
+										<div class="small-title">Недостатки</div>
+										Мы являемся сертифицированными партнерами известных брендов (ABB, Schneider Electric, IEK, Legrand и др.) и продаем исключительно оригинальную продукцию
+									</div>
+								</section>
+							</article>
+						</div>
+					</div>
+					<div class="uk-width-1-4@m">
+						<div class="add-reviews">
+							<div class="add-reviews__text">
+								Оставьте свой отзыв о нашей компании и получите скидку
+							</div>
+							<a href="#review-modal" class="btn btn--transparent" uk-toggle>Оставить отзыв</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</section>
+	<!-- end content-section -->
+{% endblock %}

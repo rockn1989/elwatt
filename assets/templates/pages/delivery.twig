@@ -1,0 +1,116 @@
+{% extends "../layouts/left-c-page.twig" %}
+{% set title="Доставка" %}
+{% set bread = ['Главная', 'Доставка'] %}
+
+{% block leftside %}
+	{% include "../includes/partials/left-sidebar-menu.twig" with {'active': 'Оплата и доставка'} %}
+{% endblock %}
+{% block content %}
+	<!-- begin content-section -->
+	<section class="content-section">
+		<div class="uk-container">
+			<h1>Оплата, доставка, возврат</h1>
+			<figure class="prime-figure">
+				<picture>
+					<source srcset="img/media/webp/content-img-3.webp" type="image/webp">
+					<source srcset="img/media/content-img-3.png" type="image/png">
+					<img src="img/media/content-img-3.png" width="1010" height="384" alt="" loading="lazy">
+				</picture>
+			</figure>
+
+			<div class="title-h2 uk-margin-medium-bottom">Условия доставки</div>
+
+			<div class="delivery-list">
+				<div class="uk-grid uk-grid-divider" uk-grid>
+					<div class="uk-width-1-2@s uk-width-1-4@m">
+						<div class="delivery-list__item">
+							<div class="small-title">Самовывоз</div>
+							<div class="title-h3">Бесплатно</div>
+						</div>
+					</div>
+					<div class="uk-width-1-2@s uk-width-1-4@m">
+						<div class="delivery-list__item">
+							<div class="small-title">Cтоимость доставки в пределах МКАД
+							</div>
+							<div class="title-h3">500 Р.</div>
+						</div>
+					</div>
+					<div class="uk-width-1-2@s uk-width-1-4@m">
+						<div class="delivery-list__item">
+							<div class="small-title">Стоимость доставки за пределы МКАД
+							</div>
+							<div class="title-h3">500 Р. +30 Р. за км*</div>
+						</div>
+					</div>
+					<div class="uk-width-1-2@s uk-width-1-4@m">
+						<div class="delivery-list__item">
+							<div class="small-title">Доставка заказа суммой от 30 000 ₽ в пределах МКАД</div>
+							<div class="title-h3">Бесплатно</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="title-h2 underline">Условия оплаты</div>
+			<div class="uk-grid uk-grid-divider uk-margin-large-bottom" uk-grid>
+				<div class="uk-width-1-2@s">
+					<div class="pay-type">
+						<div class="pay-type__img">
+							<img src="img/icon-svg/cash.svg" width="56" height="53" alt="" loading="lazy">
+						</div>
+						<div class="pay-type__text">
+							<div class="title-h3">Наличными</div>
+							<div class="small-title">Курьеру или в пункте самовывоза</div>
+						</div>
+					</div>
+					<div class="pay-type">
+						<div class="pay-type__img">
+							<img src="img/icon-svg/card.svg" width="61" height="52" alt="" loading="lazy">
+						</div>
+						<div class="pay-type__text">
+							<div class="title-h3">Банковская карта</div>
+							<div class="small-title">Онлайн на сайте или в пункте самовывоза</div>
+						</div>
+					</div>
+				</div>
+				<div class="uk-width-1-2@s">
+					<div class="pay-type">
+						<div class="pay-type__img">
+							<img src="img/icon-svg/bill.svg" width="55" height="47" alt="" loading="lazy">
+						</div>
+						<div class="pay-type__text">
+							<div class="title-h3">Безналичная оплата для ЮРЛИЦ</div>
+							<div class="small-title">Производится через любой банк, действующий на территории РФ, по реквизитам, указанным в счете</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="title-h2 underline">Условия возврата</div>
+			<div class="uk-grid uk-grid-divider uk-margin-large-bottom" uk-grid>
+				<div class="uk-width-1-2@s">
+					<div class="title-h3">Возврат товара надлежащего качества</div>
+
+					<p>Потребитель вправе отказаться от товара в любое время до его передачи, а после передачи товара — в течение 14-ти дней.</p>
+
+					<p>Возврат товара осуществляется по адресу г. Москва, МКАД 41-ый км, с/р Мельница, павильон Б13/3, магазин «Электрика»</p>
+
+					<p>График работы пункта возврата товара: ежедневно без выходных с 9:00 до 18:00.</p>
+					<div class="title-h3">При возврате товара необходимо соблюдать следующие правила:</div>
+					<ul>
+						<li>Должен быть сохранен товарный вид и потребительские свойства изделия</li>
+						<li>Не должна быть нарушена заводская упаковка</li>
+						<li>Не должны присутствовать следы эксплуатации</li>
+						<li>Должны присутствовать документы, подтверждающие совершение покупки</li>
+					</ul>
+				</div>
+				<div class="uk-width-1-2@s">
+					<div class="title-h3">При возврате товара необходимо соблюдать следующие правила:</div>
+					<p>Для осуществления возврата необходимо оформить Заявку на возврат бракованного товара или товара надлежащего качества через форму на сайте.</p>
+					<a href="" class="btn btn--white uk-margin-medium-top">Заявка на возврат</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end content-section -->
+{% endblock %}

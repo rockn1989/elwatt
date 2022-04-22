@@ -1,0 +1,22 @@
+.pay-type {
+  margin-bottom: $gutter / 2;
+  padding-bottom: $gutter / 2;
+  display: flex;
+  border-bottom: 1px solid $border;
+
+  &:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  @media (min-width: $tablet-w) {
+    margin-bottom: $gutter;
+    padding-bottom: $gutter;
+  }
+
+  &__img {
+    margin-right: 24px;
+    flex-shrink: 0;
+  }
+}

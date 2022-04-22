@@ -1,0 +1,32 @@
+.delivery-list {
+  margin-bottom: $gutter;
+  padding-bottom: $gutter / 2;
+  border-bottom: 1px solid $border;
+
+  @media (min-width: $tablet-w) {
+    margin-bottom: $gutter * 2;
+    padding-bottom: $gutter;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+
+    &>* {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .title-h3 {
+      margin-top: 0;
+    }
+  }
+
+  .small-title {
+    margin-bottom: $gutter / 2;
+
+  }
+}
