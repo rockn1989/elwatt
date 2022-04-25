@@ -383,12 +383,11 @@ form {
     top: 12px;
     left: 16px;
     color: $gray;
-    transition: font-size .3s, top .3s ease;
+    transition: transform .3s, top .3s ease;
+    transform-origin: 0 0;
 
     &.focus {
-      font-size: 12px;
-      line-height: 12px;
-      top: 8 px;
+      transform: scale(0.75) translateY(-8px);
     }
   }
 
