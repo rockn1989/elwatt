@@ -67,6 +67,12 @@
       flex-shrink: 0;
     }
   }
+
+  &--md {
+    padding: 13px 20px;
+    min-width: 192px;
+    text-align: center;
+  }
 }
 
 .sidebar-btn {

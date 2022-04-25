@@ -153,4 +153,33 @@ $(function () {
   });
 
 
+  /**
+   * Input tel mask
+   */
+
+  $(".js__input-mask")
+    .mask("+7 999 999-99-99", { clearIfNotMatch: true })
+    .focus(function (e) {
+      if (!$(this).val()) {
+        $(this).val("+7 ");
+      }
+    });
+
+
+  /**
+   * File events
+   */
+  $('.js__order-form-file').on('change', function() {
+    $('.custom-file-name-box span').text($(this).val());
+    $('.delete-file').toggleClass('uk-hidden');
+  });
+
+  $('.delete-file').on('click', function() {
+    $('.js__order-form-file').val('');
+    $('.custom-file-name-box span').text('');
+    $(this).toggleClass('uk-hidden');
+  });
+
+
+
 });

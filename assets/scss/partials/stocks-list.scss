@@ -34,17 +34,18 @@
 }
 
 .stock-card {
-  margin-bottom: $gutter / 2 !important;
   padding: $gutter / 2;
-  height: 100%;
   background: $bg;
-
-  @media (min-width: $tablet-w) {
-    margin-bottom: $gutter !important;
-  }
+  height: 100%;
 
   &__inner {
+    display: flex;
+    flex-direction: column;
     height: 100%;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 
   &__title {
@@ -84,10 +85,12 @@
     }
   }
 
-  &__text {}
+  &__text {
+    margin-bottom: $gutter / 2;
+  }
 
   &__date {
-    margin-top: $gutter / 2;
+    margin-top: auto;
     color: $gray;
   }
 

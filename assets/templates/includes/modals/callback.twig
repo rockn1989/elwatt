@@ -1,0 +1,27 @@
+{% extends "./default-modal" %}
+
+{% extends "./default-modal.twig" %}
+{% set modal = {id: 'callback-modal', class: 'callback-modal', title: 'Заказать звонок'} %}
+
+{% block content %}
+
+	<form action="" class="default-form">
+		<div class="form-group form-group--sm">
+			<label for="clb-name">Ваше имя</label>
+			<input id="clb-name" type="text">
+		</div>
+		<div class="form-group">
+			<label for="clb-positive">Телефон</label>
+			<input type="text" name="clb-tel" id="clb-tel" class="js__input-mask">
+		</div>
+
+		<div class="form-buttons">
+			<button type="submit" class="btn btn--md">Отправить</button>
+		</div>
+	</form>
+
+	<div class="politics">
+		Нажимая на кнопку Оставить отзыв, я даю согласие на обработку
+		<a href="/politics/">Персональных данных</a>
+	</div>
+{% endblock %}

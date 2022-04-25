@@ -35,4 +35,12 @@
       }
     }
   }
+
+  &--gray {
+    li {
+      a {
+        background-color: $bg;
+      }
+    }
+  }
 }
