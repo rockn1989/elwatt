@@ -106,7 +106,7 @@ $(function () {
 
   $(".default-form input, .default-form textarea").on("focus", function (e) {
     e.preventDefault();
-    $(this).siblings('label:not([class="error"]').addClass('focus');
+    $(this).siblings('label:not([class="error"])').addClass('focus');
     $(this).addClass('focus');
   });
 
@@ -149,7 +149,7 @@ $(function () {
 
   $('.delete-item').on('click', function (e) {
     e.preventDefault();
-    $(this).parents('.comparison-list__item').remove();
+    $(this).parents('.product-card').parent().remove();
   });
 
 
@@ -181,5 +181,14 @@ $(function () {
   });
 
 
+
+  /**
+   * Attention block
+   */
+
+  $('.js__hidden-attention').on('click', function (e) {
+    e.preventDefault();
+    $(this).parent('.attention-bar').slideUp();
+  });
 
 });

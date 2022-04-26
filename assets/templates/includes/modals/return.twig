@@ -1,0 +1,85 @@
+{% extends "./default-modal" %}
+
+{% extends "./default-modal.twig" %}
+{% set modal = {id: 'return-modal', class: 'return-modal', title: 'Возврат товара'} %}
+
+{% block header %}
+	<p>Возврат бракованного товара осуществляется согласно Закону РФ от 07.02.1992 N 2300-1 (ред. от 11.06.2021) "О защите прав потребителей". Для осуществления возврата необходимо оформить Заявку на возврат бракованного товара или товара надлежащего качества через форму на сайте.</p>
+{% endblock %}
+{% block content %}
+
+	<form action="" class="default-form">
+		<div class="title-h3">Информация о заказе</div>
+		<div class="form-group form-group--md">
+			<label for="run-name">Ваше имя</label>
+			<input id="run-name" type="text">
+			<i class="attention">*</i>
+		</div>
+
+		<div class="form-group form-group--md">
+			<label for="run-com">Номер заказа</label>
+			<input id="run-com" type="text">
+			<i class="attention">*</i>
+		</div>
+
+		<div class="title-h3">Причина возврата</div>
+		<div class="form-group">
+
+			<label class="custom-checkbox">
+				<input type="checkbox" name="run-ch-1">
+				<span class="custom-checkbox__input"></span>
+				<span class="custom-checkbox__label">Не соответствует описанию</span>
+			</label>
+			<label class="custom-checkbox">
+				<input type="checkbox" name="run-ch-2" checked>
+				<span class="custom-checkbox__input"></span>
+				<span class="custom-checkbox__label">Не устраивает качество</span>
+			</label>
+			<label class="custom-checkbox">
+				<input type="checkbox" name="run-ch-3">
+				<span class="custom-checkbox__input"></span>
+				<span class="custom-checkbox__label">Неисправность</span>
+			</label>
+			<label class="custom-checkbox">
+				<input type="checkbox" name="run-ch-4">
+				<span class="custom-checkbox__input"></span>
+				<span class="custom-checkbox__label">Другое</span>
+			</label>
+		</div>
+		<div class="form-group">
+			<textarea name="run-comm"></textarea>
+		</div>
+
+		<div class="form-group">
+			<label for="file-2" class="custom-file">
+				<input id="file-2" type="file" class="js__order-form-file">
+				<span class="custom-file__input">
+					<svg width="20px" height="20px" class="icon-plus">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-svg/sprite/sprite.svg#plus"></use>
+					</svg>
+
+					<div class="custom-file__label">Прикрепить файл</div>
+				</span>
+			</label>
+			<div class="custom-file-name-box">
+				<span></span>
+				<i class="delete-file uk-hidden">
+					<svg width="15px" height="15px" class="page-icon">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-svg/sprite/sprite.svg#cross"></use>
+					</svg>
+				</i>
+			</div>
+		</div>
+
+		<div class="form-buttons">
+			<button type="submit" class="btn btn--lg">Отправить</button>
+		</div>
+	</form>
+
+	<div class="politics">
+		Нажимая на кнопку Отправить, я даю согласие
+		<br>
+		на обработку
+		<a href="/politics/">персональных данных</a>
+	</div>
+{% endblock %}

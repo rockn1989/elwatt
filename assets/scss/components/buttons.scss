@@ -68,9 +68,22 @@
     }
   }
 
+  &--no-border {
+    border: none;
+    text-align: center;
+  }
+
   &--md {
     padding: 13px 20px;
-    min-width: 192px;
+    max-width: 192px;
+    width: 100%;
+    text-align: center;
+  }
+
+  &--lg {
+    padding: 13px 20px;
+    max-width: 310px;
+    width: 100%;
     text-align: center;
   }
 }

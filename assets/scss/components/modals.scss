@@ -23,6 +23,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     border-bottom: 1px solid $border;
 
     .title-h2 {
@@ -62,6 +63,28 @@
   &.review-modal {
     .uk-modal-dialog {
       width: 860px;
+    }
+  }
+
+  &.return-modal {
+    .uk-modal-dialog {
+      width: 740px;
+    }
+
+    .form-group {
+      margin-bottom: $gutter;
+    }
+
+    textarea {
+      min-height: 127px;
+    }
+
+    .custom-checkbox {
+      margin-bottom: $gutter / 2;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 

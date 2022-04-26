@@ -1,0 +1,24 @@
+.attention-bar {
+  position: relative;
+  margin-bottom: $gutter / 2;
+  padding: $gutter / 2;
+  background-color: $bg;
+
+  @media (min-width: $tablet-w) {
+    margin-bottom: $gutter;
+  }
+
+  &__text {
+    padding-right: $gutter;
+  }
+
+  &__close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    svg {
+      color: $gray;
+    }
+  }
+}

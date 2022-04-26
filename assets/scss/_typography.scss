@@ -96,8 +96,18 @@ h3,
   margin-top: $gutter * 2 !important;
 }
 
+
+
 .uk-margin-large-bottom {
   margin-bottom: $gutter * 2 !important;
+}
+
+.uk-margin-large-bottom\@m {
+  margin-bottom: $gutter;
+
+  @media (min-width: $tablet-w) {
+    margin-bottom: $gutter * 2 !important;
+  }
 }
 
 p {

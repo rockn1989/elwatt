@@ -1,0 +1,305 @@
+{% extends "../layouts/inner-page.twig" %}
+{% set title="Корзина" %}
+{% set bread = ['Главная', 'корзина'] %}
+
+{% block content %}
+
+	<!-- begin basket-section -->
+	<section class="basket-section">
+		<div class="uk-container">
+			<h1>Корзина</h1>
+
+			<div class="attention-bar">
+				<div class="attention-bar__text">Минимальная сумма заказа 10 000 ₽ (любой информер в корзине)</div>
+				<a href="#" class="attention-bar__close js__hidden-attention">
+					<svg width="14px" height="14px" class="icon-cross">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-svg/sprite/sprite.svg#cross"></use>
+					</svg>
+				</a>
+			</div>
+
+			<div class="basket-form">
+				<form action="" class="default-form">
+					<div class="order-list">
+						<div class="order-item">
+							<div class="order-item__info">
+								<div class="order-item__img">
+									<picture>
+										<source srcset="img/media/webp/basket-img-1-80x80.webp" type="image/webp">
+										<source srcset="img/media/basket-img-1-80x80.png" type="image/png">
+										<img src="img/media/basket-img-1-80x80.png" width="71" height="57" alt="" loading="lazy">
+									</picture>
+								</div>
+								<div class="order-item__desc">
+
+									<div class="order-item__title">
+										<a href="">А2702. Автоматический выключатель SH201L С10А/1п/ 4,5кА на Din-рейку 2CDS241001R0104 C10 (ABB)</a>
+									</div>
+
+									<div class="order-item__price">
+										<div class="order-item__price-value">765.30 ₽</div>
+									</div>
+								</div>
+							</div>
+							<div class="order-item__action">
+								<div class="order-item__calc">
+									<div class="calc">
+										<span class="calc__min">
+											<svg width="16px" height="24px" class="icon-minus">
+												<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-svg/sprite/sprite.svg#minus"></use>
+											</svg>
+										</span>
+										<input type="text" class="calc__value" value="1">
+										<span class="calc__plus">
+											<svg width="16px" height="24px" class="icon-plus">
+												<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-svg/sprite/sprite.svg#plus"></use>
+											</svg>
+										</span>
+									</div>
+								</div>
+								<div class="order-item__amount ">765.30 ₽</div>
+							</div>
+							<a href="" class="close js__delete-order-item">
+								<svg width="14px" height="14px" class="cross">
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-svg/sprite/sprite.svg#cross"></use>
+								</svg>
+							</a>
+						</div>
+						<div class="order-item">
+							<div class="order-item__info">
+								<div class="order-item__img">
+									<picture>
+										<source srcset="img/media/webp/basket-img-2-80x80.webp" type="image/webp">
+										<source srcset="img/media/basket-img-2-80x80.png" type="image/png">
+										<img src="img/media/basket-img-2-80x80.png" width="71" height="57" alt="" loading="lazy">
+									</picture>
+								</div>
+								<div class="order-item__desc">
+
+									<div class="order-item__title">
+										<a href="">А2703. Автоматический выключатель SH201L С16А/1п/ 4,5кА на Din-рейку 2CDS241001R0164 C16 (ABB)</a>
+									</div>
+
+									<div class="order-item__price">
+										<div class="order-item__price-value">417.66 ₽</div>
+									</div>
+								</div>
+							</div>
+							<div class="order-item__action">
+								<div class="order-item__calc">
+									<div class="calc">
+										<span class="calc__min">
+											<svg width="16px" height="24px" class="icon-minus">
+												<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-svg/sprite/sprite.svg#minus"></use>
+											</svg>
+										</span>
+										<input type="text" class="calc__value" value="1">
+										<span class="calc__plus">
+											<svg width="16px" height="24px" class="icon-plus">
+												<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-svg/sprite/sprite.svg#plus"></use>
+											</svg>
+										</span>
+									</div>
+								</div>
+								<div class="order-item__amount">4 017.66 ₽</div>
+							</div>
+							<a href="" class="close js__delete-order-item">
+								<svg width="14px" height="14px" class="cross">
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-svg/sprite/sprite.svg#cross"></use>
+								</svg>
+							</a>
+						</div>
+						<div class="order-item">
+							<div class="order-item__info">
+								<div class="order-item__img">
+									<picture>
+										<source srcset="img/media/webp/basket-img-3-80x80.webp" type="image/webp">
+										<source srcset="img/media/basket-img-3-80x80.png" type="image/png">
+										<img src="img/media/basket-img-3-80x80.png" width="71" height="57" alt="" loading="lazy">
+									</picture>
+								</div>
+								<div class="order-item__desc">
+
+									<div class="order-item__title">
+										<a href="">А0204. Автоматический выключатель BMS411 С20А/1п/ 4,5кА на Din-рейку 2CDS641041R0204 (ABB)</a>
+									</div>
+
+									<div class="order-item__price">
+										<div class="order-item__price-value">309.24 ₽</div>
+									</div>
+								</div>
+							</div>
+							<div class="order-item__action">
+								<div class="order-item__calc">
+									<div class="calc">
+										<span class="calc__min">
+											<svg width="16px" height="24px" class="icon-minus">
+												<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-svg/sprite/sprite.svg#minus"></use>
+											</svg>
+										</span>
+										<input type="text" class="calc__value" value="1">
+										<span class="calc__plus">
+											<svg width="16px" height="24px" class="icon-plus">
+												<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-svg/sprite/sprite.svg#plus"></use>
+											</svg>
+										</span>
+									</div>
+								</div>
+								<div class="order-item__amount">1 543.20 ₽</div>
+							</div>
+							<a href="" class="close js__delete-order-item">
+								<svg width="14px" height="14px" class="cross">
+									<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-svg/sprite/sprite.svg#cross"></use>
+								</svg>
+							</a>
+						</div>
+					</div>
+					<div class="h-panel">
+						<div class="uk-grid">
+							<div class="uk-width-1-2@m">
+								<div class="order-promo">
+									<div class="form-group">
+										<label for="stock">Введите промокод</label>
+										<input id="stock" type="text">
+									</div>
+									<a href="" class="btn btn--white">Применить</a>
+								</div>
+							</div>
+							<div class="uk-width-1-2@m">
+								<div class="basket-order">
+									<div class="amount">
+										<div class="amount__title">
+											Скидка
+											<span>0 ₽</span>
+										</div>
+										<div class="amount__price">
+											Итого
+											<span>6 326.16 ₽</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="form-button-wrapper uk-text-right">
+						<button type="submit" class="btn btn--lg">Оформить заказ</button>
+					</div>
+				</form>
+			</div>
+
+			<div class="products-slider-wrapper">
+				<div class="title-h2">Аналоги</div>
+
+				<div class="products-slider">
+					<div class="slider">
+						{% for i in 1..4 %}
+							<div class="slide">
+								<div class="product-card">
+									<header class="product-card__header">
+										<div class="product-card__img" uk-lightbox>
+											<a href="img/media/catalog/catalog-img-{{i}}.png">
+												<img src="img/media/catalog/catalog-img-{{i}}.png" alt="" loading="lazy">
+											</a>
+										</div>
+										<div class="stocks">
+											<div class="stocks__new">новое</div>
+										</div>
+										<div class="product-card__toolbar">
+											<a href="" class="favorite"></a>
+											<a href="" class="comparison"></a>
+										</div>
+									</header>
+									<section class="product-card__body">
+										<div class="product-card__title">
+											<a href="">
+												Ю2937. Рамка-2 9209-82-GS золото с серебристой вставкой (Электромонтаж)</a>
+										</div>
+										<div class="product-card__footer">
+											<div class="product-card__prices">
+												<div class="old-price">323.16 ₽</div>
+												<div class="current-price">306.06 ₽</div>
+											</div>
+											<div class="product-card__controls">
+												<div class="calc">
+													<span class="calc__min">
+														<svg width="16px" height="24px" class="icon-minus">
+															<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-svg/sprite/sprite.svg#minus"></use>
+														</svg>
+													</span>
+													<input type="text" class="calc__value" value="1">
+													<span class="calc__plus">
+														<svg width="16px" height="24px" class="icon-plus">
+															<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-svg/sprite/sprite.svg#plus"></use>
+														</svg>
+													</span>
+												</div>
+												<a href="" class="btn btn--red btn--icon">
+													<svg width="14px" height="19px" class="icon-cart">
+														<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-svg/sprite/sprite.svg#cart"></use>
+													</svg>
+												</a>
+											</div>
+										</div>
+									</section>
+								</div>
+							</div>
+						{% endfor %}
+						<div class="slide">
+							<div class="product-card">
+								<header class="product-card__header">
+									<div class="product-card__img" uk-lightbox>
+										<a href="img/media/catalog/catalog-img-5.png">
+											<img src="img/media/catalog/catalog-img-5.png" alt="" loading="lazy">
+										</a>
+									</div>
+									<div class="stocks">
+										<div class="stocks__new">новое</div>
+									</div>
+									<div class="product-card__toolbar">
+										<a href="" class="favorite"></a>
+										<a href="" class="comparison"></a>
+									</div>
+								</header>
+								<section class="product-card__body">
+									<div class="product-card__title">
+										<a href="">
+											Р7619. Механизм Valena 694280 (774420) розетки "евр" с/п белый (Legrand)</a>
+									</div>
+									<div class="product-card__footer">
+										<div class="product-card__prices">
+											<div class="old-price">323.16 ₽</div>
+											<div class="current-price">306.06 ₽</div>
+										</div>
+										<div class="product-card__controls">
+											<div class="calc">
+												<span class="calc__min">
+													<svg width="16px" height="24px" class="icon-minus">
+														<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-svg/sprite/sprite.svg#minus"></use>
+													</svg>
+												</span>
+												<input type="text" class="calc__value" value="1">
+												<span class="calc__plus">
+													<svg width="16px" height="24px" class="icon-plus">
+														<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-svg/sprite/sprite.svg#plus"></use>
+													</svg>
+												</span>
+											</div>
+											<a href="" class="btn btn--red btn--icon">
+												<svg width="14px" height="19px" class="icon-cart">
+													<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-svg/sprite/sprite.svg#cart"></use>
+												</svg>
+											</a>
+										</div>
+									</div>
+								</section>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end basket-section -->
+
+{% endblock %}
