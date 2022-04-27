@@ -1,0 +1,49 @@
+.auth-list {
+  @include list-reset();
+  display: flex;
+  flex-wrap: wrap;
+
+  li {
+    margin: 0 12px 12px 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 56px;
+      height: 50px;
+      border: 1px solid $prime;
+      border-radius: $borderRadius;
+      transition: background-color .3s ease;
+
+      svg {
+        transition: color .3s ease;
+      }
+
+      &:hover {
+        background-color: $prime;
+
+        svg {
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+
+.add-auth {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  &__label {
+    margin-right: $gutter / 2;
+    color: $gray;
+    margin-bottom: 12px;
+  }
+}

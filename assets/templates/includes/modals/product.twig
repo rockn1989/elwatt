@@ -1,0 +1,42 @@
+{% extends "./default-modal" %}
+
+{% extends "./default-modal.twig" %}
+{% set modal = {id: 'product-modal', class: 'product-modal', title: 'Товар добавлен в корзину'} %}
+
+{% block content %}
+	<div class="additional-content">
+		<div class="product-card">
+			<header class="product-card__header">
+				<div class="product-card__img" uk-lightbox>
+					<a href="img/media/catalog/catalog-img-1.png">
+						<img src="img/media/catalog/catalog-img-1.png" alt="" loading="lazy">
+					</a>
+				</div>
+				<div class="stocks">
+					<div class="stocks__hit">хит</div>
+					<div class="stocks__new">новое</div>
+				</div>
+				<div class="product-card__toolbar">
+					<a href="" class="favorite"></a>
+					<a href="" class="comparison"></a>
+					<a href="" class="delete-item"></a>
+				</div>
+			</header>
+			<section class="product-card__body">
+				<div class="product-card__title">
+					<a href="">Aвтоматический выключатель ABB 1-полюсный SH201L C10 однофазный</a>
+				</div>
+				<div class="product-card__footer">
+					<div class="product-card__prices">
+						<div class="old-price">323.16 ₽</div>
+						<div class="current-price">306.06 ₽</div>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+	<div class="form-buttons">
+		<a class="btn btn--md">Перейти</a>
+		<a class="btn btn--no-style uk-modal-close-default" uk-close>Продолжить покупки</a>
+	</div>
+{% endblock %}

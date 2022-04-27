@@ -1,0 +1,59 @@
+{% extends "./default-modal" %}
+
+{% extends "./default-modal.twig" %}
+{% set modal = {id: 'auth-modal', class: 'auth-modal', title: 'войти'} %}
+
+{% block content %}
+
+	<form action="" class="default-form">
+		<div class="form-group">
+			<label for="auth-name">Ваше имя</label>
+			<input id="auth-name" type="text">
+		</div>
+		<div class="form-group">
+			<label for="auth-positive">Пароль</label>
+			<input type="password" name="auth-tel" id="auth-tel">
+		</div>
+
+		<a href="#recover-modal" uk-toggle>Забыли пароль?</a>
+
+		<div class="form-buttons">
+			<button type="submit" class="btn btn--md">Войти</button>
+			<a href="#reg-modal" class="btn btn--no-style" uk-toggle>Зарегистрироваться</a>
+		</div>
+	</form>
+
+	<div class="add-auth">
+		<div class="add-auth__label">Или войти через</div>
+		<ul class="auth-list">
+			<li>
+				<a href="#">
+					<svg width="12px" height="24px" class="icon-fb">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-svg/sprite/sprite.svg#fb"></use>
+					</svg>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<svg width="20px" height="20px" class="icon-googlge">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-svg/sprite/sprite.svg#google"></use>
+					</svg>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<svg width="23px" height="14px" class="icon-vk">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-svg/sprite/sprite.svg#vk"></use>
+					</svg>
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<svg width="14px" height="24px" class="icon-ok">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-svg/sprite/sprite.svg#ok"></use>
+					</svg>
+				</a>
+			</li>
+		</ul>
+	</div>
+{% endblock %}

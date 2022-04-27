@@ -1,0 +1,14 @@
+{% extends "./default-modal" %}
+
+{% extends "./default-modal.twig" %}
+{% set modal = {id: 'favorites-modal', class: 'favorites-modal', title: 'Для просмотра 
+избранного войдите 
+в личный кабинет'} %}
+
+{% block content %}
+
+	<div class="form-buttons">
+		<a class="btn btn--md">Перейти</a>
+		<a class="btn btn--no-style uk-modal-close-default" uk-close>Продолжить покупки</a>
+	</div>
+{% endblock %}

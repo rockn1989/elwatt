@@ -71,3 +71,21 @@
     }
   }
 }
+
+
+.right-sidebar {
+  padding: $gutter / 2;
+  border: 1px solid $border;
+
+  &__title {
+    margin-bottom: $gutter / 2;
+    padding-bottom: $gutter - 6px;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: $secondFont;
+    color: $prime;
+    border-bottom: 1px solid $border;
+  }
+}

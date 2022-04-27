@@ -11,6 +11,12 @@
     }
 
     .stock-card {
+      margin-bottom: $gutter / 2;
+
+      @media (min-width: $tablet-w) {
+        margin-bottom: $gutter;
+      }
+
       .stock-card__date {
         display: none;
       }

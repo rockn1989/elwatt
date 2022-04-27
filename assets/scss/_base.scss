@@ -4,6 +4,7 @@ body {
   line-height: $lineHeight;
   font-family: $mainFont;
   color: $black;
+  overflow-x: hidden;
 }
 
 *,
@@ -25,7 +26,7 @@ body {
   }
 
   &>.uk-container {
-    &*:last-child {
+    &>*:last-child {
       margin-bottom: 0;
     }
   }

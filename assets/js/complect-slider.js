@@ -1,16 +1,16 @@
 'use strict';
 
 $(function () {
-  const $productSlider = $('.products-slider .slider');
+  const $complectSlider = $('.complect-slider .slider');
   
-  $productSlider.on('init reInit afterChange', function (_event, slick, _currentSlide, _nextSlide) {
+  $complectSlider.on('init reInit afterChange', function (_event, slick, _currentSlide, _nextSlide) {
     if (slick.slideCount <= 4) {
       $(this).addClass('small-slider');
     }
   });
 
 
-  $productSlider.slick({
+  $complectSlider.slick({
       arrows: true,
       dots: false,
       infinite: true,
@@ -20,6 +20,7 @@ $(function () {
       speed: 500,
       slidesToShow: 4,
       slidesToScroll: 1,
+      variableWidth: true,
       centerMode: false,
       responsive: [
         {

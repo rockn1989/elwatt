@@ -1,0 +1,44 @@
+{% extends "./default-modal" %}
+
+{% extends "./default-modal.twig" %}
+{% set modal = {id: 'reg-modal', class: 'reg-modal', title: 'регистрация'} %}
+
+{% block content %}
+
+	<form action="" class="default-form">
+		<div class="form-group">
+			<label for="reg-name">Ваше имя</label>
+			<input id="reg-name" type="text">
+		</div>
+		<div class="form-group">
+			<label for="reg-surname">Фамилия</label>
+			<input id="reg-surname" type="text">
+		</div>
+		<div class="form-group">
+			<label for="reg-email">Электронная почта</label>
+			<input id="reg-email" type="email">
+			<i class="attention">*</i>
+		</div>
+		<div class="form-group">
+			<label for="reg-tel">Телефон</label>
+			<input id="reg-tel" type="text" class="js__input-mask">
+		</div>
+		<div class="form-group">
+			<label for="reg-password">Пароль</label>
+			<input id="reg-password" type="password" name="reg-tel">
+			<i class="attention">*</i>
+		</div>
+
+		<a href="">Сгенерировать надежный пароль</a>
+
+		<div class="form-buttons">
+			<button type="submit" class="btn btn--lg">Зарегистрироваться</button>
+			<a href="#auth-modal" class="btn btn--no-style" uk-toggle>Войти</a>
+		</div>
+	</form>
+
+	<div class="politics">
+		Нажимая на кнопку Зарегистрироваться, я даю согласие на обработку
+		<a href="/politics/">Персональных данных</a>
+	</div>
+{% endblock %}

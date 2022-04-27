@@ -28,6 +28,7 @@
 
     .title-h2 {
       margin-bottom: 0;
+      width: calc(100% - #{$gutter * 3});
     }
   }
 
@@ -44,6 +45,7 @@
     border-radius: 50%;
     border: 1px solid $border;
     transition: background-color .3s ease;
+    flex-shrink: 0;
 
     @media (min-width: $tablet-w) {
       width: 96px;
@@ -57,6 +59,15 @@
     &:hover {
       border-color: $bg;
       background-color: $bg;
+    }
+  }
+
+  .uk-modal-close-default {
+    position: static;
+    transform: unset;
+
+    svg {
+      display: none;
     }
   }
 
@@ -98,4 +109,20 @@
     }
   }
 
+  .form-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: $mob-s) {
+      justify-content: flex-start;
+    }
+  }
+
+}
+
+.additional-content {
+  padding-bottom: $gutter / 2;
+  border-bottom: 1px solid $border;
 }

@@ -17,6 +17,10 @@
 
   &__footer {
     margin-top: auto;
+
+    &>*:last-child {
+      margin-bottom: 0;
+    }
   }
 
   &__img {

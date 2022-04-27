@@ -42,6 +42,18 @@
     }
   }
 
+  &--no-style {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    color: $prime;
+
+    &:hover {
+      background-color: unset;
+      color: $black;
+    }
+  }
+
   &--red {
     background-color: $red;
     border-color: $red;

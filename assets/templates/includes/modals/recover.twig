@@ -1,0 +1,19 @@
+{% extends "./default-modal" %}
+
+{% extends "./default-modal.twig" %}
+{% set modal = {id: 'recover-modal', class: 'recover-modal', title: 'Восстановить пароль'} %}
+
+{% block content %}
+
+	<form action="" class="default-form">
+		<div class="form-group">
+			<label for="recover-email">Электронная почта</label>
+			<input id="recover-email" type="email" name="recover-email" require>
+		</div>
+		<p>Ссылка для смены пароля будет выслана вам на указанную почту</p>
+
+		<div class="form-buttons">
+			<button type="submit" class="btn btn--md">Восставновить</button>
+		</div>
+	</form>
+{% endblock %}
