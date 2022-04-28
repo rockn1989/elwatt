@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>{{ title }}</title>
+		<link rel="preload" href="fonts/inter/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
+		<link rel="preload" href="fonts/akrobat/Akrobat-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
+		<link rel="preload" href="fonts/akrobat/Akrobat-Bold.woff2" as="font" type="font/woff2" crossorigin>
+
+		<style>
+
+			@font-face {
+				font-family: "Inter";
+				src: url("../fonts/inter/Inter-Regular.woff2") format("woff2"), url("../fonts/inter/Inter-Regular.woff") format("woff");
+				font-weight: 400;
+				font-style: normal;
+				font-display: swap;
+			}
+
+			@font-face {
+				font-family: "Akrobat";
+				src: url("../fonts/akrobat/Akrobat-Bold.woff2") format("woff2"), url("../fonts/akrobat/Akrobat-Bold.woff") format("woff");
+				font-weight: 700;
+				font-style: normal;
+				font-display: swap;
+			}
+
+			@font-face {
+				font-family: "Akrobat";
+				src: url("../fonts/akrobat/Akrobat-ExtraBold.woff2") format("woff2"), url("../fonts/akrobat/Akrobat-ExtraBold.woff") format("woff");
+				font-weight: 800;
+				font-style: normal;
+				font-display: swap;
+			}
+			html,
+			body {
+				margin: 0;
+				padding: 0;
+			}
+			.uk-container {
+				max-width: 1440px;
+				padding: 0 40px;
+				margin: 0 auto;
+			}
+
+			body {
+				background-color: #251664;
+				min-height: 100vh;
+				color: #ffffff;
+				font-family: "Inter";
+			}
+			.page-wrapper {
+				display: -webkit-box;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-orient: vertical;
+				-webkit-box-direction: normal;
+				-ms-flex-direction: column;
+				flex-direction: column;
+				min-height: 100vh;
+			}
+
+			header {
+				padding: 20px 0;
+			}
+
+			main {
+				flex-grow: 2;
+			}
+
+			* {
+				box-sizing: border-box;
+			}
+
+			body h1 {
+				margin: 0;
+				color: #ffffff;
+				text-transform: uppercase;
+				font-weight: 800;
+				font-family: 'Akrobat';
+				font-size: 32px;
+				line-height: 32px;
+			}
+
+			main > .uk-container {
+				height: calc(100vh - 100px);
+			}
+
+			.page-error {
+				min-height: 100%;
+				display: flex;
+				flex-wrap: wrap;
+				align-items: center;
+				flex-direction: column;
+				justify-content: center;
+			}
+
+			.left-column {
+				padding-bottom: 40px;
+				border-bottom: 1px solid #ffffff;
+				width: 100%;
+			}
+			.right-column {
+				padding-top: 40px;
+				width: 100%;
+			}
+
+			.right-column p {
+				margin: 0 0 20px;
+				text-transform: uppercase;
+				font-family: 'Akrobat';
+				font-weight: 700;
+				color: #ffffff;
+				font-size: 18px;
+				line-height: 22px;
+			}
+
+			.right-column p:last-child {
+				margin-bottom: 0;
+			}
+
+			.right-column a {
+				color: #ffffff;
+				display: inline-flex;
+				align-items: center;
+				text-decoration: none;
+			}
+
+			.right-column a img {
+				margin-left: 4px;
+			}
+
+			.right-column a:hover {
+				color: #ffffff;
+				text-decoration: none;
+			}
+
+			@media(min-width: 768px) {
+
+				body h1 {
+					font-size: 48px;
+					line-height: 58px;
+				}
+				.page-error {
+					flex-direction: row;
+				}
+				.left-column {
+					padding-bottom: 0;
+					width: 30%;
+					padding-right: 40px;
+
+					border-bottom: none;
+				}
+				.right-column {
+					padding-top: 0;
+					padding-left: 40px;
+					width: 70%;
+					border-left: 1px solid #ffffff;
+				}
+
+				.right-column p {
+					font-size: 24px;
+					line-height: 30px;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="page-wrapper">
+			<header>
+				<div class="uk-container">
+					<img src="img/logo-white.svg" width="157" height="50" alt="">
+				</div>
+			</header>
+			<main class="main"> {% block content %}{% endblock %}
+				</main>
+			</div>
+
+		</body>
+	</html>

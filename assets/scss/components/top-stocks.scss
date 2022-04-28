@@ -1,0 +1,32 @@
+
+.top-stocks {
+  &__inner {
+    position: relative;
+    padding: 9px 52px 9px 9px;
+    background-color: $red;
+    text-transform: uppercase;
+    color: $white;
+    text-align: center;
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 32px;
+    display: none;
+    @media (min-width: $tablet-w) {
+      display: block;
+    }
+  }
+
+  &__btn {
+    position: absolute;
+    top: 9px;
+    right: 20px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $white;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+}

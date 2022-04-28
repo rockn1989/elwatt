@@ -1,0 +1,22 @@
+.page-not-found {
+  &__header {
+    margin-bottom: $gutter / 2;
+
+    @media (min-width: $tablet-w) {
+      margin-bottom: $gutter * 2;
+    }
+  }
+
+  &__body {
+    &>* {
+      margin-bottom: $gutter;
+      @media (min-width: $tablet-w) {
+        margin-bottom: $gutter * 2;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

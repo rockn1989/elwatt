@@ -1,0 +1,92 @@
+{% extends "../layouts/inner-page.twig" %}
+{% set title="404" %}
+{% set bread = ['Главная'] %}
+
+{% block content %}
+
+	<!-- begin page-not-found -->
+	<section class="page-not-found">
+		<div class="uk-container">
+			<div class="page-not-found__header">
+				<div class="uk-grid uk-grid-divider uk-child-width-1-2@s uk-margin-medium-bottom" uk-grid>
+					<div class="uk-width-1-3@s">
+						<h1>ошибка 404</h1>
+					</div>
+					<div class="uk-width-2-3@s">
+						<p>Неправильно набран адрес, или такой страницы на сайте больше не существует.</p>
+
+						<p>Вернитесь на главную или воспользуйтесь поиском по сайту. Все наши товары и бренды вы можете найти по ссылкам ниже.</p>
+					</div>
+				</div>
+			</div>
+			<div class="page-not-found__body">
+				<div class="additional-product-list uk-child-width-1-2@s uk-child-width-1-3@m uk-child-width-1-4@l uk-grid" uk-grid>
+					<div class="uk-width-1-2@s uk-width-1-3@m uk-width-1-4@l">
+						<div class="additional-product">
+							<div class="additional-product__img">
+								<img src="img/media/sliders/add-img-66x66-1.png" alt="" loading="lazy">
+							</div>
+							<div class="additional-product__text">
+								<a href="" tabindex="0">Щиты распределительные</a>
+							</div>
+						</div>
+					</div>
+					<div class="uk-width-1-2@s uk-width-1-3@m uk-width-1-4@l">
+						<div class="additional-product">
+							<div class="additional-product__img">
+								<img src="img/media/sliders/add-img-66x66-2.png" alt="" loading="lazy">
+							</div>
+							<div class="additional-product__text">
+								<a href="" tabindex="0">Магнитные пускатели и контакторы</a>
+							</div>
+						</div>
+					</div>
+					<div class="uk-width-1-2@s uk-width-1-3@m uk-width-1-4@l">
+						<div class="additional-product">
+							<div class="additional-product__img">
+								<img src="img/media/sliders/add-img-66x66-3.png" alt="" loading="lazy">
+							</div>
+							<div class="additional-product__text">
+								<a href="" tabindex="0">Стабилизаторы напряжения</a>
+							</div>
+						</div>
+					</div>
+					<div class="uk-width-1-2@s uk-width-1-3@m uk-width-1-4@l">
+						<div class="additional-product">
+							<div class="additional-product__img">
+								<img src="img/media/sliders/add-img-66x66-1.png" alt="" loading="lazy">
+							</div>
+							<div class="additional-product__text">
+								<a href="" tabindex="0">Щиты распределительные</a>
+							</div>
+						</div>
+					</div>
+					<div class="uk-width-1-2@s uk-width-1-3@m uk-width-1-4@l">
+						<div class="additional-product">
+							<div class="additional-product__img">
+								<img src="img/media/sliders/add-img-66x66-2.png" alt="" loading="lazy">
+							</div>
+							<div class="additional-product__text">
+								<a href="" tabindex="0">Магнитные пускатели и контакторы</a>
+							</div>
+						</div>
+					</div>
+					<div class="uk-width-1-2@s uk-width-1-3@m uk-width-1-4@l">
+						<div class="additional-product">
+							<div class="additional-product__img">
+								<img src="img/media/sliders/add-img-66x66-3.png" alt="" loading="lazy">
+							</div>
+							<div class="additional-product__text">
+								<a href="" tabindex="0">Стабилизаторы напряжения</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				{% include "../includes/partials/brands-list.twig" %}
+			</div>
+		</div>
+	</section>
+	<!-- end page-not-found -->
+
+{% endblock %}

@@ -42,18 +42,6 @@
     }
   }
 
-  &--no-style {
-    padding: 0;
-    border: none;
-    background-color: transparent;
-    color: $prime;
-
-    &:hover {
-      background-color: unset;
-      color: $black;
-    }
-  }
-
   &--red {
     background-color: $red;
     border-color: $red;
@@ -80,11 +68,6 @@
     }
   }
 
-  &--no-border {
-    border: none;
-    text-align: center;
-  }
-
   &--md {
     padding: 13px 20px;
     max-width: 192px;
@@ -98,6 +81,30 @@
     width: 100%;
     text-align: center;
   }
+
+  &--no-style {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    color: $prime;
+
+    &:hover {
+      background-color: unset;
+      color: $black;
+    }
+  }
+
+  &--no-text {
+    svg {
+      margin: 0;
+    }
+  }
+
+  &--no-border {
+    border: none;
+    text-align: center;
+  }
+
 }
 
 .sidebar-btn {

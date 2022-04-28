@@ -47,6 +47,19 @@ body.menu-open .page-wrapper:after {
   z-index: 900;
 }
 
+body.mask {
+  &:after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(3, 3, 3, 0.35);
+    z-index: 998;
+  }
+}
+
 .page-wrapper:after {
   content: "";
   position: fixed;
@@ -115,3 +128,6 @@ picture {
     max-height: 100%;
   }
 }
+
+
+
