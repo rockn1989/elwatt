@@ -130,4 +130,8 @@ picture {
 }
 
 
-
+.icon-cross {
+  &:hover {
+    color: $red !important;
+  }
+}

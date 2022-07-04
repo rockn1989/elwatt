@@ -1,0 +1,250 @@
+{% extends "../layouts/left-c-page.twig" %}
+{% set title="Мои заказы" %}
+{% set bread = ['Главная', 'Мои заказы'] %}
+
+{% block leftside %}
+	{% include "../includes/partials/favorites-menu.twig" with {'active': 'Мои заказы'} %}
+{% endblock %}
+{% block content %}
+	<!-- begin content-section -->
+	<section class="content-section">
+		<div class="uk-container">
+			<div class="uk-panel uk-flex uk-flex-between@s uk-flex-start uk-flex-wrap">
+				<a href="" class="uk-flex uk-margin-small-right">
+					<svg width="14px" height="12px" class="icon-arrow-left uk-margin-small-right">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-svg/sprite/sprite.svg#arrow-left-tr"></use>
+					</svg>
+					Вернуться к моим заказам
+				</a>
+				<a href="" class="uk-flex" onclick="window.print();">
+					<svg width="20px" height="18px" class="icon-print uk-margin-small-right">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-svg/sprite/sprite.svg#print"></use>
+					</svg>
+					Распечатать заказ
+				</a>
+			</div>
+			<h1>Заказ № 32389123</h1>
+
+			<table class="order-table">
+				<thead>
+					<tr>
+						<th>Дата добавления</th>
+						<th>Кол-во</th>
+						<th>Покупатель</th>
+						<th>Сумма</th>
+						<th>Статус</th>
+					</tr>
+				</thead>
+
+				<tbody>
+
+					<tr>
+						<td data-mob-title="Дата добавления">17.07.2022</td>
+						<td data-mob-title="Кол-во">1</td>
+						<td data-mob-title="Покупатель">Вячеслав Преображенский</td>
+						<td data-mob-title="Сумма">6 326.16 ₽</td>
+						<td data-mob-title="Статус">
+							<span class="order-status order-status--pending">В обработке</span>
+						</td>
+					</tr>
+
+				</tbody>
+			</tbody>
+		</table>
+
+		<h3>Оплата</h3>
+		<table class="status-table">
+			<tbody>
+				<tr>
+					<td>
+						<p>Счет №17/1 от 30.06.2022, Внутренний счет</p>
+						<p>
+							<span>Сумма к оплате по счету: 1 250.67 ₽</span>
+						</p>
+					</td>
+					<td>
+						<span class="order-status order-status--payed">Оплачено</span>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<p>Счет №17/1 от 30.06.2022, Внутренний счет</p>
+						<p>
+							<span>Сумма к оплате по счету: 1 250.67 ₽</span>
+						</p>
+					</td>
+					<td>
+						<span class="order-status order-status--no-payed">Не оплачено</span>
+						<p>
+							<a href="">Изменить способ оплаты</a>
+						</p>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<h3>Доставка</h3>
+		<table class="status-table">
+			<tbody>
+				<tr>
+					<td>
+						<p>Отгрузка №17/1 от 30.06.2022, стоимость доставки 310.00 ₽</p>
+						<p>
+							<span>Статус отгрузки:</span>
+							ожидает обработки
+						</p>
+						<p>
+							<span>Служба доставки:</span>
+							Почта России EMS
+						</p>
+					</td>
+					<td>
+						<span class="order-status order-status--no-payed">Не отгружено</span>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<h3>Состав заказа</h3>
+
+		<div class="order-list order-list--small">
+			<div class="order-item">
+				<div class="order-item__info">
+					<div class="order-item__img">
+						<picture>
+							<source srcset="img/media/webp/basket-img-1-80x80.webp" type="image/webp">
+							<source srcset="img/media/basket-img-1-80x80.png" type="image/png">
+							<img src="img/media/basket-img-1-80x80.png" width="71" height="57" alt="" loading="lazy">
+						</picture>
+					</div>
+					<div class="order-item__desc">
+
+						<div class="order-item__title">
+							<a href="">А2702. Автоматический выключатель SH201L С10А/1п/ 4,5кА на Din-рейку 2CDS241001R0104 C10 (ABB)</a>
+						</div>
+
+						<div class="order-item__price">
+							<div class="order-item__price-value">765.30 ₽</div>
+						</div>
+					</div>
+				</div>
+				<div class="order-item__action">
+					<div class="order-item__count">
+						1 шт.
+					</div>
+					<div class="order-item__amount ">765.30 ₽</div>
+				</div>
+			</div>
+			<div class="order-item">
+				<div class="order-item__info">
+					<div class="order-item__img">
+						<picture>
+							<source srcset="img/media/webp/basket-img-2-80x80.webp" type="image/webp">
+							<source srcset="img/media/basket-img-2-80x80.png" type="image/png">
+							<img src="img/media/basket-img-2-80x80.png" width="71" height="57" alt="" loading="lazy">
+						</picture>
+					</div>
+					<div class="order-item__desc">
+
+						<div class="order-item__title">
+							<a href="">А2703. Автоматический выключатель SH201L С16А/1п/ 4,5кА на Din-рейку 2CDS241001R0164 C16 (ABB)</a>
+						</div>
+
+						<div class="order-item__price">
+							<div class="order-item__price-value">417.66 ₽</div>
+						</div>
+					</div>
+				</div>
+				<div class="order-item__action">
+					<div class="order-item__count">
+						1 шт.
+					</div>
+					<div class="order-item__amount">4 017.66 ₽</div>
+				</div>
+			</div>
+			<div class="order-item">
+				<div class="order-item__info">
+					<div class="order-item__img">
+						<picture>
+							<source srcset="img/media/webp/basket-img-3-80x80.webp" type="image/webp">
+							<source srcset="img/media/basket-img-3-80x80.png" type="image/png">
+							<img src="img/media/basket-img-3-80x80.png" width="71" height="57" alt="" loading="lazy">
+						</picture>
+					</div>
+					<div class="order-item__desc">
+
+						<div class="order-item__title">
+							<a href="">А0204. Автоматический выключатель BMS411 С20А/1п/ 4,5кА на Din-рейку 2CDS641041R0204 (ABB)</a>
+						</div>
+
+						<div class="order-item__price">
+							<div class="order-item__price-value">309.24 ₽</div>
+						</div>
+					</div>
+				</div>
+				<div class="order-item__action">
+					<div class="order-item__count">
+						1 шт.
+					</div>
+					<div class="order-item__amount">1 543.20 ₽</div>
+				</div>
+			</div>
+		</div>
+
+		<table class="table-order-result">
+			<tbody>
+				<tr>
+					<td>
+						<p>
+							<span>Сумма покупки</span>
+						</p>
+					</td>
+					<td>6 326.16 ₽</td>
+				</tr>
+				<tr>
+					<td>
+						<p>
+							<span>Скидка</span>
+						</p>
+					</td>
+					<td>0 ₽</td>
+				</tr>
+				<tr>
+					<td>
+						<p>
+							<span>Доставка</span>
+						</p>
+					</td>
+					<td>310 ₽</td>
+				</tr>
+				<tr>
+					<td>
+						<p>
+							<span>Итого</span>
+						</p>
+					</td>
+					<td>
+						<div class="big-price">
+							<span>6 776.16 ₽</span>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+
+		<div class="uk-panel uk-flex uk-flex-between@s uk-flex-center uk-flex-wrap">
+			<a href="" class="btn btn--white btn--icon uk-margin-medium-top uk-margin-small-right">
+				<svg width="20px" height="22px" class="icon-repeat">
+					<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-svg/sprite/sprite.svg#repeat"></use>
+				</svg>
+				Повторить заказ
+			</a>
+
+			<a href="" class="btn btn--white btn--icon uk-margin-medium-top">
+				<svg width="14px" height="14px" class="icon-cross">
+					<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/icon-svg/sprite/sprite.svg#cross"></use>
+				</svg>
+				Отменить заказ
+			</a>
+		</div>
+	</div>
+</section><!-- end content-section -->{% endblock %}

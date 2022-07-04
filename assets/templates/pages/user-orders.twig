@@ -1,0 +1,80 @@
+{% extends "../layouts/left-c-page.twig" %}
+{% set title="Мои заказы" %}
+{% set bread = ['Главная', 'Мои заказы'] %}
+
+{% block leftside %}
+	{% include "../includes/partials/favorites-menu.twig" with {'active': 'Мои заказы'} %}
+{% endblock %}
+{% block content %}
+	<!-- begin content-section -->
+	<section class="content-section">
+		<div class="uk-container">
+			<h1>Мои заказы</h1>
+
+			<table class="order-table">
+				<thead>
+					<tr>
+						<th>№ заказа</th>
+						<th>Дата добавления</th>
+						<th>Кол-во</th>
+						<th>Покупатель</th>
+						<th>Сумма</th>
+						<th>Статус</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					{% for item in 1..2 %}
+						<tr>
+							<td data-mob-title="№ заказа">32389123</td>
+							<td data-mob-title="Дата добавления">17.07.2022</td>
+							<td data-mob-title="Кол-во">1</td>
+							<td data-mob-title="Покупатель">Вячеслав Преображенский</td>
+							<td data-mob-title="Сумма">6 326.16 ₽</td>
+							<td data-mob-title="Статус">
+								<span class="order-status order-status--pending">В обработке</span>
+							</td>
+						</tr>
+						<tr>
+							<td data-mob-title="№ заказа">47490</td>
+							<td data-mob-title="Дата добавления">08.07.2022</td>
+							<td data-mob-title="Кол-во">3</td>
+							<td data-mob-title="Покупатель">Вячеслав Преображенский</td>
+							<td data-mob-title="Сумма">12 193.38 ₽</td>
+							<td data-mob-title="Статус">
+								<span class="order-status order-status--payed">Оплачен</span>
+							</td>
+						</tr>
+						<tr>
+							<td data-mob-title="№ заказа">32389123</td>
+							<td data-mob-title="Дата добавления">17.07.2022</td>
+							<td data-mob-title="Кол-во">1</td>
+							<td data-mob-title="Покупатель">Вячеслав Преображенский</td>
+							<td data-mob-title="Сумма">417.66 ₽</td>
+							<td data-mob-title="Статус">
+								<span class="order-status order-status--finished">Выполнен</span>
+							</td>
+						</tr>
+						<tr>
+							<td data-mob-title="№ заказа">32389123</td>
+							<td data-mob-title="Дата добавления">17.07.2022</td>
+							<td data-mob-title="Кол-во">1</td>
+							<td data-mob-title="Покупатель">Вячеслав Преображенский</td>
+							<td data-mob-title="Сумма">3 765.30 ₽</td>
+							<td data-mob-title="Статус">
+								<span class="order-status order-status--canceled">Отменен</span>
+							</td>
+						</tr>
+					{% endfor %}
+				</tbody>
+			</tbody>
+		</table>
+
+
+		<div class="pagination-wrapper">
+			<div class="load-more btn btn--white">Показать еще</div>
+
+			{% include "../includes/components/pagination.twig" %}
+		</div>
+	</div>
+</section><!-- end content-section -->{% endblock %}

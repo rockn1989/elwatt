@@ -1,0 +1,15 @@
+@media print {
+  .header,
+  .footer,
+  .breadcrumbs-wrapper,
+  .left-sidebar {
+    display: none;
+  }
+
+  .order-status {
+    padding-left: 0;
+    &:before {
+      display: none;
+    }
+  }
+}
