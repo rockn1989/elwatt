@@ -45,12 +45,16 @@
     right: 0;
     display: flex;
 
-    &>a {
+    &>* {
       display: block;
       margin-left: 20px;
 
       &:first-child {
         margin-left: 0;
+      }
+
+      a {
+        margin-right: 0 !important;
       }
     }
   }
@@ -139,10 +143,15 @@
   }
 }
 
-.favorite {
+.favorite,
+.comparison,
+.delete-item {
   display: block;
   width: 22px;
   height: 22px;
+} 
+
+.favorite {
   background: url('../img/icon-svg/star.svg') center no-repeat;
   background-size: 18px;
 
@@ -154,17 +163,15 @@
 }
 
 .comparison {
-  display: block;
-  width: 22px;
-  height: 22px;
-  background: url('../img/icon-svg/comparison.svg') center no-repeat;
+  background: url('../img/icon-svg/comparison-added.svg') center no-repeat;
   background-size: 14px;
+  &.added {
+    background: url('../img/icon-svg/comparison.svg') center no-repeat;
+    background-size: 14px;
+  }
 }
 
 .delete-item {
-  display: block;
-  width: 22px;
-  height: 22px;
   background: url('../img/icon-svg/cross-prime.svg') center no-repeat;
   background-size: 14px;
 }

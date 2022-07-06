@@ -29,6 +29,13 @@
 <rect x="14" y="14" width="4" height="4" rx="1" fill="currentColor"/>
 </symbol><symbol id="check" viewBox="5 7 14 9.56">
 <path d="M6 11.59L9.54541 15.2566C9.93847 15.663 10.5901 15.663 10.9832 15.2566L18 8" stroke="#251664" stroke-width="2" stroke-linecap="round"/>
+</symbol><symbol id="comparison-added" viewBox="0 0 14 14">
+<style type="text/css">
+	.st0{fill:none;stroke:#251664;stroke-width:0.75;stroke-miterlimit:10;}
+</style>
+<rect x="0.4" y="3.8" class="st0" width="3" height="9.8"/>
+<rect x="10.8" y="7.6" class="st0" width="2.8" height="6"/>
+<rect x="5.6" y="0.4" class="st0" width="2.8" height="13.2"/>
 </symbol><symbol id="comparison" viewBox="5 5 14 14">
 <path d="M5 9.2H8V19H5V9.2ZM16.2 13H19V19H16.2V13ZM10.6 5H13.4V19H10.6V5Z" fill="#251664"/>
 </symbol><symbol id="cross-prime" viewBox="5 5 14.28 14.14">

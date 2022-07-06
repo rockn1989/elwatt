@@ -45,7 +45,7 @@
     }
 
     &.uk-active {
-      a {
+      &>* {
         border-color: $prime;
 
         &:hover {
@@ -54,7 +54,7 @@
         }
       }
     }
-
+    &.prev,
     &.next {
       display: none;
 
