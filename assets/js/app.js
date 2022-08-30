@@ -230,4 +230,21 @@ $(function () {
     $(".search-desk").find('input[type="text"]').val("");
     $(".search-desktop").find('input[type="text"]').val("");
   });
+
+  /**
+   * Password show/hide
+   */
+
+  const passwordContainer = $('.password-container');
+
+  $.each(passwordContainer, function (_, el) {
+    let passwordInput = $(el).find('input'),
+      passwordIcon = $(el).find('i');
+  
+    passwordIcon.on('click', function () {
+      const type = passwordInput.attr('type') === 'password' ? 'text' : 'password';
+      passwordInput.attr('type', type);
+      $(this).toggleClass('icon-eye-open icon-eye-close');
+    });
+  });
 });

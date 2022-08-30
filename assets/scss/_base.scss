@@ -132,6 +132,25 @@ picture {
 
 .icon-cross {
   &:hover {
-    color: $red !important;
+    color: $red  !important;
   }
+}
+
+.icon-eye-close,
+.icon-eye-open {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  cursor: pointer;
+}
+
+.icon-eye-close {
+  background-image: url('../img/icon-eye-close.png');
+}
+
+.icon-eye-open {
+  background-image: url('../img/icon-eye-open.png');
 }
