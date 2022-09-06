@@ -79,6 +79,12 @@
         margin-right: 0;
       }
     }
+
+    .current-price {
+      font-size: 20px;
+      line-height: 24px;
+      font-weight: bold;
+    }
   }
 
   &__controls {
@@ -149,7 +155,7 @@
   display: block;
   width: 22px;
   height: 22px;
-} 
+}
 
 .favorite {
   background: url('../img/icon-svg/star.svg') center no-repeat;
@@ -165,6 +171,7 @@
 .comparison {
   background: url('../img/icon-svg/comparison-added.svg') center no-repeat;
   background-size: 14px;
+
   &.added {
     background: url('../img/icon-svg/comparison.svg') center no-repeat;
     background-size: 14px;
