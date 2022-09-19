@@ -247,4 +247,22 @@ $(function () {
       $(this).toggleClass('icon-eye-open icon-eye-close');
     });
   });
+
+  /**
+   * Dropdown menu scroll
+   */
+
+  if($('.catalog-nav .main-subnav').length) {
+    $('.catalog-nav .main-subnav').mCustomScrollbar({
+      axis: "y",
+      theme: "siteTheme",
+      scrollInertia: 500
+    });
+
+    $('.catalog-nav .subnav').mCustomScrollbar({
+      axis: "y",
+      theme: "siteTheme",
+      scrollInertia: 500
+    });
+  }
 });
