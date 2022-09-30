@@ -20,10 +20,11 @@
   position: relative;
   height: 100%;
   padding: $gutter / 2 104px $gutter / 2 $gutter / 2;
-
+  min-height: 104px;
 
   @media (min-width: $tablet-w) {
     padding: $gutter 188px $gutter $gutter;
+    min-height: 208px;
   }
 
   &__title {

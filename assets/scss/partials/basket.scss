@@ -248,21 +248,54 @@
   &--small {
     .order-item {
       padding: 20px 0 20px;
+
       &:first-child {
         padding-top: 0;
         border-top: none;
       }
+
       &:last-child {
         border-bottom: 1px solid $border;
       }
     }
 
-    .order-item__amount  {
+    .order-item__amount {
       font-size: 16px;
     }
 
     .order-item__count {
       margin-left: 40px;
+    }
+  }
+}
+
+.order-list-actions {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @media print {
+    display: none;
+  }
+
+  @media (min-width: $tablet-w) {
+    justify-content: flex-end;
+  }
+
+  a {
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display: inline-flex;
+    align-items: center;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    svg {
+      margin-right: 8px;
+      flex-shrink: 0;
     }
   }
 }
